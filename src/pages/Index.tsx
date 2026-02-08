@@ -12,6 +12,8 @@ import { ReviewScreen } from "@/screens/ReviewScreen";
 import { PetCard } from "@/components/PetCard";
 import { Button } from "@/components/ui/button";
 import { Dog, Plus, Calendar, MapPin, Bell, ArrowRight } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { Toaster } from "@/components/ui/toaster";
 
 type Screen = 
   | "home" 
@@ -30,6 +32,15 @@ type Screen =
 const Index = () => {
   const [currentScreen, setCurrentScreen] = useState<Screen>("home");
   const [activeTab, setActiveTab] = useState("home");
+  const { toast } = useToast();
+
+  const handleProfileComplete = () => {
+    setCurrentScreen("home");
+    toast({
+      title: "Perfil criado com sucesso",
+      description: "Seu perfil foi salvo com sucesso!",
+    });
+  };
 
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
@@ -45,7 +56,7 @@ const Index = () => {
     return (
       <RegisterScreen
         onBack={() => setCurrentScreen("home")}
-        onComplete={() => setCurrentScreen("home")}
+        onComplete={handleProfileComplete}
       />
     );
   }
@@ -309,6 +320,7 @@ const Index = () => {
       </div>
 
       <BottomTabBar activeTab={activeTab} onTabChange={handleTabChange} />
+      <Toaster />
     </MobileFrame>
   );
 };
