@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MobileFrame } from "@/components/MobileFrame";
 import { BottomTabBar } from "@/components/BottomTabBar";
 import { RegisterScreen } from "@/screens/RegisterScreen";
+import { AddPetScreen } from "@/screens/AddPetScreen";
 import { SearchScreen } from "@/screens/SearchScreen";
 import { WalkerProfileScreen } from "@/screens/WalkerProfileScreen";
 import { ScheduleScreen } from "@/screens/ScheduleScreen";
@@ -20,6 +21,7 @@ type Screen =
   | "active-walk" 
   | "review" 
   | "register" 
+  | "add-pet"
   | "bookings" 
   | "pets" 
   | "profile"
@@ -44,6 +46,15 @@ const Index = () => {
       <RegisterScreen
         onBack={() => setCurrentScreen("home")}
         onComplete={() => setCurrentScreen("home")}
+      />
+    );
+  }
+
+  if (currentScreen === "add-pet") {
+    return (
+      <AddPetScreen
+        onBack={() => setCurrentScreen("pets")}
+        onComplete={() => setCurrentScreen("pets")}
       />
     );
   }
@@ -108,7 +119,7 @@ const Index = () => {
       <MobileFrame>
         <div className="sticky top-0 z-50 flex items-center justify-between px-4 py-3 bg-background/95 backdrop-blur-sm border-b border-border">
           <h1 className="text-lg font-bold text-foreground">Meus Pets</h1>
-          <Button variant="default" size="sm" className="gap-2">
+          <Button variant="default" size="sm" className="gap-2" onClick={() => setCurrentScreen("add-pet")}>
             <Plus size={16} />
             Adicionar
           </Button>
@@ -214,7 +225,7 @@ const Index = () => {
               <span className="text-xs font-medium text-foreground">Luna</span>
             </div>
             <button
-              onClick={() => setCurrentScreen("register")}
+              onClick={() => setCurrentScreen("add-pet")}
               className="flex flex-col items-center"
             >
               <div className="w-16 h-16 rounded-2xl border-2 border-dashed border-border flex items-center justify-center mb-1 hover:border-primary transition-colors">
