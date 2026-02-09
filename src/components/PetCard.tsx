@@ -11,6 +11,7 @@ interface PetCardProps {
   size: "Pequeno" | "Médio" | "Grande";
   alerts?: string[];
   onEdit?: () => void;
+  onClick?: () => void;
 }
 
 export function PetCard({
@@ -21,6 +22,7 @@ export function PetCard({
   size,
   alerts = [],
   onEdit,
+  onClick,
 }: PetCardProps) {
   const sizeColors = {
     Pequeno: "bg-success/10 text-success",
@@ -29,7 +31,10 @@ export function PetCard({
   };
 
   return (
-    <div className="bg-card rounded-2xl p-4 shadow-card">
+    <div
+      className="bg-card rounded-2xl p-4 shadow-card active:scale-[0.98] transition-transform cursor-pointer"
+      onClick={onClick}
+    >
       <div className="flex gap-4">
         <div className="w-20 h-20 rounded-2xl overflow-hidden bg-muted flex-shrink-0">
           <img
@@ -38,7 +43,7 @@ export function PetCard({
             className="w-full h-full object-cover"
           />
         </div>
-        
+
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between">
             <div>
@@ -55,7 +60,7 @@ export function PetCard({
               <Pencil size={16} />
             </Button>
           </div>
-          
+
           <div className="flex items-center gap-2 mt-2">
             <Badge className={cn("text-xs font-medium", sizeColors[size])}>
               {size}
@@ -63,7 +68,7 @@ export function PetCard({
           </div>
         </div>
       </div>
-      
+
       {alerts.length > 0 && (
         <div className="mt-3 pt-3 border-t border-border">
           <p className="text-xs text-muted-foreground mb-2">Alertas:</p>

@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MobileFrame } from "@/components/MobileFrame";
 import { BottomTabBar } from "@/components/BottomTabBar";
+import { LoginScreen } from "@/screens/LoginScreen";
 import { RegisterScreen } from "@/screens/RegisterScreen";
+import { ProfileScreen } from "@/screens/ProfileScreen";
+import { PetDetailsScreen } from "@/screens/PetDetailsScreen";
+import { SupportScreen } from "@/screens/SupportScreen";
 import { AddPetScreen } from "@/screens/AddPetScreen";
 import { SearchScreen } from "@/screens/SearchScreen";
 import { WalkerProfileScreen } from "@/screens/WalkerProfileScreen";
@@ -15,22 +19,26 @@ import { Dog, Plus, Calendar, MapPin, Bell, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 
-type Screen = 
-  | "home" 
-  | "search" 
-  | "walker-profile" 
-  | "schedule" 
-  | "active-walk" 
-  | "review" 
-  | "register" 
+type Screen =
+  | "login"
+  | "profile"
+  | "support"
+  | "pet-details"
+  | "home"
+  | "search"
+  | "walker-profile"
+  | "schedule"
+  | "active-walk"
+  | "review"
+  | "register"
   | "add-pet"
-  | "bookings" 
-  | "pets" 
+  | "bookings"
+  | "pets"
   | "profile"
   | "activity-feed";
 
 const Index = () => {
-  const [currentScreen, setCurrentScreen] = useState<Screen>("home");
+  const [currentScreen, setCurrentScreen] = useState<Screen>("login");
   const [activeTab, setActiveTab] = useState("home");
   const { toast } = useToast();
 
@@ -48,14 +56,29 @@ const Index = () => {
     if (tab === "search") setCurrentScreen("search");
     if (tab === "bookings") setCurrentScreen("activity-feed");
     if (tab === "pets") setCurrentScreen("pets");
-    if (tab === "profile") setCurrentScreen("register");
+    if (tab === "profile") setCurrentScreen("profile");
   };
 
   // Render different screens based on navigation
+  if (currentScreen === "login") {
+    return (
+      <LoginScreen
+        onLogin={() => setCurrentScreen("home")}
+        onRegister={() => setCurrentScreen("register")}
+        onForgotPassword={() => {
+          toast({
+            title: "Simulação",
+            description: "Email de recuperação enviado (simulado).",
+          });
+        }}
+      />
+    );
+  }
+
   if (currentScreen === "register") {
     return (
       <RegisterScreen
-        onBack={() => setCurrentScreen("home")}
+        onBack={() => setCurrentScreen("login")}
         onComplete={handleProfileComplete}
       />
     );
@@ -101,8 +124,8 @@ const Index = () => {
     return (
       <ActiveWalkScreen
         onEnd={() => setCurrentScreen("review")}
-        onPhoto={() => {}}
-        onEmergency={() => {}}
+        onPhoto={() => { }}
+        onEmergency={() => { }}
       />
     );
   }
@@ -125,6 +148,14 @@ const Index = () => {
     );
   }
 
+  if (currentScreen === "pet-details") {
+    return (
+      <PetDetailsScreen
+        onBack={() => setCurrentScreen("pets")}
+      />
+    );
+  }
+
   if (currentScreen === "pets") {
     return (
       <MobileFrame>
@@ -143,6 +174,7 @@ const Index = () => {
             age="2 anos"
             size="Grande"
             alerts={["Medo de carros", "Toma medicação"]}
+            onClick={() => setCurrentScreen("pet-details")}
           />
           <PetCard
             name="Luna"
@@ -151,10 +183,34 @@ const Index = () => {
             age="4 anos"
             size="Pequeno"
             alerts={["Idoso"]}
+            onClick={() => setCurrentScreen("pet-details")}
           />
         </div>
         <BottomTabBar activeTab={activeTab} onTabChange={handleTabChange} />
       </MobileFrame>
+    );
+  }
+
+  if (currentScreen === "support") {
+    return (
+      <SupportScreen
+        onBack={() => setCurrentScreen("profile")}
+      />
+    );
+  }
+
+  if (currentScreen === "profile") {
+    return (
+      <>
+        <ProfileScreen
+          onLogout={() => {
+            setCurrentScreen("login");
+            setActiveTab("home");
+          }}
+          onSupport={() => setCurrentScreen("support")}
+        />
+        <BottomTabBar activeTab={activeTab} onTabChange={handleTabChange} />
+      </>
     );
   }
 
