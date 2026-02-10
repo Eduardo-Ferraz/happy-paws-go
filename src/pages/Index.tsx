@@ -15,6 +15,8 @@ import { ActivityFeedScreen } from "@/screens/ActivityFeedScreen";
 import { ReviewScreen } from "@/screens/ReviewScreen";
 import { WalkerBookingScreen } from "@/screens/WalkerBookingScreen";
 import { TutorMonitoringScreen } from "@/screens/TutorMonitoringScreen";
+import { AttendantDashboardScreen, type Ticket } from "@/screens/AttendantDashboardScreen";
+import { AttendantTicketScreen } from "@/screens/AttendantTicketScreen";
 import { PetCard } from "@/components/PetCard";
 import { Button } from "@/components/ui/button";
 import { Dog, Plus, Calendar, MapPin, Bell, ArrowRight } from "lucide-react";
@@ -39,12 +41,15 @@ type Screen =
   | "profile"
   | "activity-feed"
   | "walker-booking"
-  | "tutor-monitoring";
+  | "tutor-monitoring"
+  | "attendant-dashboard"
+  | "attendant-ticket";
 
 const Index = () => {
   const [currentScreen, setCurrentScreen] = useState<Screen>("login");
   const [activeTab, setActiveTab] = useState("home");
   const [showWalkNotification, setShowWalkNotification] = useState(false);
+  const [selectedTicket, setSelectedTicket] = useState<Ticket | null>(null);
   const { toast } = useToast();
 
   const handleProfileComplete = () => {
@@ -70,12 +75,34 @@ const Index = () => {
       <LoginScreen
         onLogin={() => setCurrentScreen("home")}
         onRegister={() => setCurrentScreen("register")}
+        onAttendantLogin={() => setCurrentScreen("attendant-dashboard")}
         onForgotPassword={() => {
           toast({
             title: "Simulação",
             description: "Email de recuperação enviado (simulado).",
           });
         }}
+      />
+    );
+  }
+
+  if (currentScreen === "attendant-dashboard") {
+    return (
+      <AttendantDashboardScreen
+        onSelectTicket={(ticket) => {
+          setSelectedTicket(ticket);
+          setCurrentScreen("attendant-ticket");
+        }}
+        onLogout={() => setCurrentScreen("login")}
+      />
+    );
+  }
+
+  if (currentScreen === "attendant-ticket" && selectedTicket) {
+    return (
+      <AttendantTicketScreen
+        ticket={selectedTicket}
+        onBack={() => setCurrentScreen("attendant-dashboard")}
       />
     );
   }

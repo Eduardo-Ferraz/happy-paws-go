@@ -9,9 +9,10 @@ interface LoginScreenProps {
   onLogin: () => void;
   onRegister: () => void;
   onForgotPassword?: () => void;
+  onAttendantLogin?: () => void;
 }
 
-export function LoginScreen({ onLogin, onRegister, onForgotPassword }: LoginScreenProps) {
+export function LoginScreen({ onLogin, onRegister, onForgotPassword, onAttendantLogin }: LoginScreenProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -100,7 +101,7 @@ export function LoginScreen({ onLogin, onRegister, onForgotPassword }: LoginScre
         </div>
 
         {/* Footer */}
-        <div className="mt-12 text-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
+        <div className="mt-12 text-center space-y-3 animate-slide-up" style={{ animationDelay: "0.2s" }}>
           <p className="text-sm text-muted-foreground">
             Não tem uma conta?
             <button 
@@ -110,6 +111,12 @@ export function LoginScreen({ onLogin, onRegister, onForgotPassword }: LoginScre
               Cadastre-se
             </button>
           </p>
+          <button
+            onClick={onAttendantLogin}
+            className="text-xs text-muted-foreground hover:text-primary font-medium underline-offset-2 hover:underline"
+          >
+            Entrar como Atendente
+          </button>
         </div>
 
       </MobileContent>
