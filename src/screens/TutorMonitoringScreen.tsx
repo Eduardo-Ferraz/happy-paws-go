@@ -1,10 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import { MobileFrame } from "@/components/MobileFrame";
 import { Button } from "@/components/ui/button";
-import { Dog, AlertTriangle, MapPin, Clock, Shield } from "lucide-react";
+import { Dog, AlertTriangle, MapPin, Clock, Shield, Camera } from "lucide-react";
 
 interface TutorMonitoringScreenProps {
   onWalkEnded?: () => void;
+  onPhoto?: () => void;
+  onEmergency?: () => void;
 }
 
 // Planned route points
@@ -35,7 +37,7 @@ function pointsToPath(points: { x: number; y: number }[]) {
   return points.map((p, i) => `${i === 0 ? "M" : "L"}${p.x},${p.y}`).join(" ");
 }
 
-export function TutorMonitoringScreen({ onWalkEnded }: TutorMonitoringScreenProps) {
+export function TutorMonitoringScreen({ onWalkEnded, onPhoto, onEmergency }: TutorMonitoringScreenProps) {
   const [elapsed, setElapsed] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeviating, setIsDeviating] = useState(false);
@@ -215,6 +217,31 @@ export function TutorMonitoringScreen({ onWalkEnded }: TutorMonitoringScreenProp
 
       {/* Bottom Controls */}
       <div className="absolute bottom-8 left-4 right-4 space-y-3">
+        {/* Action Buttons Row */}
+        {!walkEnded && (
+          <div className="flex gap-4 justify-center">
+            {/* Camera Button */}
+            <Button
+              onClick={onPhoto}
+              variant="secondary"
+              size="fab"
+              className="bg-secondary text-secondary-foreground shadow-lg"
+            >
+              <Camera size={24} />
+            </Button>
+
+            {/* Emergency Button */}
+            <Button
+              onClick={onEmergency}
+              variant="emergency"
+              size="fab"
+              className="shadow-lg"
+            >
+              <AlertTriangle size={24} />
+            </Button>
+          </div>
+        )}
+
         {/* Simulate Deviation Button */}
         {!isDeviating && !walkEnded && (
           <Button

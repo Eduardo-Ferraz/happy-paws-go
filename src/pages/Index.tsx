@@ -10,7 +10,7 @@ import { AddPetScreen } from "@/screens/AddPetScreen";
 import { SearchScreen } from "@/screens/SearchScreen";
 import { WalkerProfileScreen } from "@/screens/WalkerProfileScreen";
 import { ScheduleScreen } from "@/screens/ScheduleScreen";
-import { ActiveWalkScreen } from "@/screens/ActiveWalkScreen";
+
 import { ActivityFeedScreen } from "@/screens/ActivityFeedScreen";
 import { ReviewScreen } from "@/screens/ReviewScreen";
 import { WalkerBookingScreen } from "@/screens/WalkerBookingScreen";
@@ -33,7 +33,6 @@ type Screen =
   | "search"
   | "walker-profile"
   | "schedule"
-  | "active-walk"
   | "review"
   | "register"
   | "add-pet"
@@ -149,7 +148,13 @@ const Index = () => {
     return (
       <ScheduleScreen
         onBack={() => setCurrentScreen("walker-profile")}
-        onConfirm={() => setCurrentScreen("active-walk")}
+        onConfirm={() => {
+          setCurrentScreen("home");
+          toast({
+            title: "Agendamento confirmado",
+            description: "Seu passeio foi agendado com sucesso! 🐕",
+          });
+        }}
       />
     );
   }
@@ -176,24 +181,24 @@ const Index = () => {
             description: "O passeio de Thor foi finalizado com sucesso! 🐕",
           });
         }}
+        onPhoto={() => setCurrentScreen("walk-photo-post")}
+        onEmergency={() => {
+          toast({
+            title: "Emergência acionada",
+            description: "A equipe de suporte foi notificada.",
+            variant: "destructive",
+          });
+        }}
       />
     );
   }
 
-  if (currentScreen === "active-walk") {
-    return (
-      <ActiveWalkScreen
-        onEnd={() => setCurrentScreen("review")}
-        onPhoto={() => setCurrentScreen("walk-photo-post")}
-        onEmergency={() => { }}
-      />
-    );
-  }
+
 
   if (currentScreen === "walk-photo-post") {
     return (
       <WalkPhotoPost
-        onBack={() => setCurrentScreen("active-walk")}
+        onBack={() => setCurrentScreen("tutor-monitoring")}
         walkStatus="started"
       />
     );
