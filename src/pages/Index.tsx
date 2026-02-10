@@ -13,6 +13,8 @@ import { ScheduleScreen } from "@/screens/ScheduleScreen";
 import { ActiveWalkScreen } from "@/screens/ActiveWalkScreen";
 import { ActivityFeedScreen } from "@/screens/ActivityFeedScreen";
 import { ReviewScreen } from "@/screens/ReviewScreen";
+import { WalkerBookingScreen } from "@/screens/WalkerBookingScreen";
+import { TutorMonitoringScreen } from "@/screens/TutorMonitoringScreen";
 import { PetCard } from "@/components/PetCard";
 import { Button } from "@/components/ui/button";
 import { Dog, Plus, Calendar, MapPin, Bell, ArrowRight } from "lucide-react";
@@ -35,11 +37,14 @@ type Screen =
   | "bookings"
   | "pets"
   | "profile"
-  | "activity-feed";
+  | "activity-feed"
+  | "walker-booking"
+  | "tutor-monitoring";
 
 const Index = () => {
   const [currentScreen, setCurrentScreen] = useState<Screen>("login");
   const [activeTab, setActiveTab] = useState("home");
+  const [showWalkNotification, setShowWalkNotification] = useState(false);
   const { toast } = useToast();
 
   const handleProfileComplete = () => {
@@ -116,6 +121,32 @@ const Index = () => {
       <ScheduleScreen
         onBack={() => setCurrentScreen("walker-profile")}
         onConfirm={() => setCurrentScreen("active-walk")}
+      />
+    );
+  }
+
+  if (currentScreen === "walker-booking") {
+    return (
+      <WalkerBookingScreen
+        onBack={() => setCurrentScreen("home")}
+        onStartWalk={() => {
+          setShowWalkNotification(true);
+          setCurrentScreen("home");
+        }}
+      />
+    );
+  }
+
+  if (currentScreen === "tutor-monitoring") {
+    return (
+      <TutorMonitoringScreen
+        onWalkEnded={() => {
+          setCurrentScreen("home");
+          toast({
+            title: "Passeio encerrado",
+            description: "O passeio de Thor foi finalizado com sucesso! 🐕",
+          });
+        }}
       />
     );
   }
@@ -218,6 +249,25 @@ const Index = () => {
   return (
     <MobileFrame>
       <div className="px-4 py-4 pb-24">
+        {/* Walk Notification */}
+        {showWalkNotification && (
+          <button
+            onClick={() => {
+              setShowWalkNotification(false);
+              setCurrentScreen("tutor-monitoring");
+            }}
+            className="w-full mb-4 bg-success/15 border border-success/30 rounded-2xl p-4 flex items-center gap-3 animate-in slide-in-from-top text-left"
+          >
+            <div className="w-10 h-10 bg-success rounded-full flex items-center justify-center shrink-0">
+              <Dog size={20} className="text-primary-foreground" />
+            </div>
+            <div className="flex-1">
+              <p className="font-semibold text-foreground text-sm">🐾 Passeio Iniciado!</p>
+              <p className="text-xs text-muted-foreground">Thor está passeando agora. Toque para monitorar.</p>
+            </div>
+            <ArrowRight size={18} className="text-success shrink-0" />
+          </button>
+        )}
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div>
@@ -333,7 +383,7 @@ const Index = () => {
               <Button
                 size="sm"
                 variant="outline"
-                onClick={() => setCurrentScreen("active-walk")}
+                onClick={() => setCurrentScreen("walker-booking")}
               >
                 Ver detalhes
               </Button>
