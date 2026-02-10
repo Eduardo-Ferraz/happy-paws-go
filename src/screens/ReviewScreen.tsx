@@ -2,7 +2,11 @@ import { useState } from "react";
 import { MobileFrame, MobileHeader, MobileContent } from "@/components/MobileFrame";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowLeft, Star, Clock, MapPin, CheckCircle } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ArrowLeft, Star, Clock, MapPin, CheckCircle, CreditCard, Smartphone } from "lucide-react";
 
 interface ReviewScreenProps {
   onBack?: () => void;
@@ -12,6 +16,13 @@ interface ReviewScreenProps {
 export function ReviewScreen({ onBack, onSubmit }: ReviewScreenProps) {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
+  const [isPaymentOpen, setIsPaymentOpen] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState<"credit_card" | "pix">("credit_card");
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardName, setCardName] = useState("");
+  const [cardExpiry, setCardExpiry] = useState("");
+  const [cardCvv, setCardCvv] = useState("");
+  const [isProcessingPayment, setIsProcessingPayment] = useState(false);
 
   const walkSummary = {
     walker: "Marina Silva",
@@ -125,10 +136,125 @@ export function ReviewScreen({ onBack, onSubmit }: ReviewScreenProps) {
           />
         </div>
 
-        {/* History Button */}
-        <Button variant="outline" className="w-full mb-4">
-          Ver Histórico de Passeios
-        </Button>
+        {/* Payment Button */}
+        <Dialog open={isPaymentOpen} onOpenChange={setIsPaymentOpen}>
+          <DialogTrigger asChild>
+            <Button variant="default" className="w-full mb-4">
+              💳 Realizar Pagamento
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="max-w-[400px]">
+            <DialogHeader>
+              <DialogTitle>Pagamento do Passeio</DialogTitle>
+              <DialogDescription>
+                Total: R$ 45,00
+              </DialogDescription>
+            </DialogHeader>
+
+            <div className="space-y-4">
+              {/* Payment Method Selection */}
+              <div className="space-y-3">
+                <Label>Método de Pagamento</Label>
+                <RadioGroup value={paymentMethod} onValueChange={(value) => setPaymentMethod(value as "credit_card" | "pix")}>
+                  <div className="flex items-center space-x-2 p-3 rounded-lg border hover:bg-muted cursor-pointer">
+                    <RadioGroupItem value="credit_card" id="credit_card" />
+                    <Label htmlFor="credit_card" className="flex items-center gap-2 cursor-pointer flex-1">
+                      <CreditCard size={20} className="text-primary" />
+                      <span>Cartão de Crédito</span>
+                    </Label>
+                  </div>
+                  <div className="flex items-center space-x-2 p-3 rounded-lg border hover:bg-muted cursor-pointer">
+                    <RadioGroupItem value="pix" id="pix" />
+                    <Label htmlFor="pix" className="flex items-center gap-2 cursor-pointer flex-1">
+                      <Smartphone size={20} className="text-primary" />
+                      <span>Pix</span>
+                    </Label>
+                  </div>
+                </RadioGroup>
+              </div>
+
+              {/* Credit Card Form */}
+              {paymentMethod === "credit_card" && (
+                <div className="space-y-3">
+                  <div>
+                    <Label htmlFor="cardNumber">Número do Cartão</Label>
+                    <Input
+                      id="cardNumber"
+                      placeholder="0000 0000 0000 0000"
+                      value={cardNumber}
+                      onChange={(e) => setCardNumber(e.target.value)}
+                      maxLength={19}
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="cardName">Nome no Cartão</Label>
+                    <Input
+                      id="cardName"
+                      placeholder="NOME COMPLETO"
+                      value={cardName}
+                      onChange={(e) => setCardName(e.target.value.toUpperCase())}
+                    />
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <Label htmlFor="cardExpiry">Validade</Label>
+                      <Input
+                        id="cardExpiry"
+                        placeholder="MM/AA"
+                        value={cardExpiry}
+                        onChange={(e) => setCardExpiry(e.target.value)}
+                        maxLength={5}
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="cardCvv">CVV</Label>
+                      <Input
+                        id="cardCvv"
+                        placeholder="000"
+                        value={cardCvv}
+                        onChange={(e) => setCardCvv(e.target.value)}
+                        maxLength={3}
+                        type="password"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Pix Instructions */}
+              {paymentMethod === "pix" && (
+                <div className="space-y-3">
+                  <div className="bg-muted p-4 rounded-lg text-center">
+                    <p className="text-sm text-muted-foreground mb-2">Chave Pix:</p>
+                    <p className="font-mono font-bold text-foreground">pix@happypaws.com</p>
+                  </div>
+                  <div className="bg-primary/5 p-3 rounded-lg">
+                    <p className="text-xs text-muted-foreground">
+                      💡 Após realizar o pagamento via Pix, o sistema confirmará automaticamente em alguns instantes.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {/* Payment Button */}
+              <Button
+                className="w-full"
+                onClick={() => {
+                  setIsProcessingPayment(true);
+                  // Simulate payment processing
+                  setTimeout(() => {
+                    setIsProcessingPayment(false);
+                    setIsPaymentOpen(false);
+                    // Show success message or navigate
+                  }, 2000);
+                }}
+                disabled={isProcessingPayment || (paymentMethod === "credit_card" && (!cardNumber || !cardName || !cardExpiry || !cardCvv))}
+              >
+                {isProcessingPayment ? "Processando..." : `Pagar R$ 45,00`}
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
       </MobileContent>
 
       {/* Submit Button */}
