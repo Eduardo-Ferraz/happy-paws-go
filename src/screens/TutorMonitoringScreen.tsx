@@ -213,6 +213,19 @@ export function TutorMonitoringScreen({ onWalkEnded }: TutorMonitoringScreenProp
         )}
       </div>
 
+      <div className="absolute bottom-8 left-4 right-4">
+        <div className="flex gap-4 justify-center mb-4">
+          {/* Camera Button */}
+          <Button
+            onClick={onPhoto}
+            variant="secondary"
+            size="fab"
+            className="bg-secondary text-secondary-foreground shadow-lg"
+          >
+            <Camera size={24} />
+          </Button>
+
+
       {/* Bottom Controls */}
       <div className="absolute bottom-8 left-4 right-4 space-y-3">
         {/* Simulate Deviation Button */}
