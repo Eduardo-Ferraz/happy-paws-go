@@ -17,6 +17,7 @@ import { WalkerBookingScreen } from "@/screens/WalkerBookingScreen";
 import { TutorMonitoringScreen } from "@/screens/TutorMonitoringScreen";
 import { AttendantDashboardScreen, type Ticket } from "@/screens/AttendantDashboardScreen";
 import { AttendantTicketScreen } from "@/screens/AttendantTicketScreen";
+import { WalkPhotoPost } from "@/screens/WalkPhotoPost";
 import { PetCard } from "@/components/PetCard";
 import { Button } from "@/components/ui/button";
 import { Dog, Plus, Calendar, MapPin, Bell, ArrowRight } from "lucide-react";
@@ -43,7 +44,8 @@ type Screen =
   | "walker-booking"
   | "tutor-monitoring"
   | "attendant-dashboard"
-  | "attendant-ticket";
+  | "attendant-ticket"
+  | "walk-photo-post";
 
 const Index = () => {
   const [currentScreen, setCurrentScreen] = useState<Screen>("login");
@@ -182,8 +184,17 @@ const Index = () => {
     return (
       <ActiveWalkScreen
         onEnd={() => setCurrentScreen("review")}
-        onPhoto={() => { }}
+        onPhoto={() => setCurrentScreen("walk-photo-post")}
         onEmergency={() => { }}
+      />
+    );
+  }
+
+  if (currentScreen === "walk-photo-post") {
+    return (
+      <WalkPhotoPost
+        onBack={() => setCurrentScreen("active-walk")}
+        walkStatus="started"
       />
     );
   }
