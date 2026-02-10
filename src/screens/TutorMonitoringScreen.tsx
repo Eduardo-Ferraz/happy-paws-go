@@ -5,6 +5,7 @@ import { Dog, AlertTriangle, MapPin, Clock, Shield } from "lucide-react";
 
 interface TutorMonitoringScreenProps {
   onWalkEnded?: () => void;
+  onPhoto?: () => void;
 }
 
 // Planned route points
