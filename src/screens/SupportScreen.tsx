@@ -129,6 +129,7 @@ export function SupportScreen({ onBack }: SupportScreenProps) {
                                     <SelectValue placeholder="Selecione..." />
                                 </SelectTrigger>
                                 <SelectContent>
+                                    <SelectItem value="Emergência">Emergência</SelectItem>
                                     <SelectItem value="Financeiro">Financeiro</SelectItem>
                                     <SelectItem value="Técnico">Técnico</SelectItem>
                                     <SelectItem value="Denúncia">Denúncia</SelectItem>
