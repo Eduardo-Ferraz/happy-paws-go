@@ -215,6 +215,8 @@ export function TutorMonitoringScreen({ onWalkEnded, onPhoto, onEmergency }: Tut
         )}
       </div>
 
+      {/* test */}
+
       {/* Bottom Controls */}
       <div className="absolute bottom-8 left-4 right-4 space-y-3">
         {/* Action Buttons Row */}
