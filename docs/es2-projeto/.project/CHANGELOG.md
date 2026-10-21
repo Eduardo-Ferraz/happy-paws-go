@@ -112,3 +112,21 @@ Três caminhos automáticos foram testados no painel embutido e **nenhum funcion
 embutido também não tem ferramenta de anexar arquivo (a extensão do Chrome tem).
 A transferência dos arquivos fica manual (arrastar); a recompilação e a conferência
 do PDF, essas sim, dá para fazer pelo painel.
+
+## 2026-10-21 (quarta parte) — subido no Overleaf e compilado
+
+O usuário subiu os arquivos; a verificação foi feita pelo painel do navegador.
+
+- **`bibliografia.bib` foi o único que não subiu** na primeira tentativa (conferido
+  baixando cada documento pelo endpoint `/project/:id/doc/:doc_id/download`, que é a
+  forma confiável de ler o conteúdo de um arquivo no Overleaf — o editor virtualiza as
+  linhas e engana a leitura pelo DOM). A entrada `falbo:notas18` foi digitada direto
+  no editor, em uma linha só.
+- **Compilação limpa:** 0 erros e 10 avisos benignos (`h`→`ht` de float e underfull
+  hbox em tabelas). O primeiro passe ainda acusava as 8 citações indefinidas; depois de
+  *Clear cached files* + *Recompile* (para o BibTeX rodar), zeraram.
+- **Conferência do PDF:** 20 figuras (1 a 20), **nenhuma caixa "[Diagrama pendente]"**,
+  protótipo nas Figuras 10 a 16, CIU nas 17, 18 e 20, diagrama de sequência na 19 em
+  página própria e girado. Capa com o histórico de alterações.
+- Numeração final: Capítulo 5 = lógica de negócio, Capítulo 6 = interação
+  humano-computador (o antigo Capítulo 5 saiu da compilação).

@@ -25,15 +25,30 @@ compilados**.
 2. `t3/` — as 4 figuras que faltavam, o protótipo de alta fidelidade (14 telas), a
    seção LaTeX do protótipo e as correções do documento (ver CHANGELOG). Prazo 26/10.
 
+## Estado do Overleaf (conferido em 21/10, às 12h)
+
+Os arquivos foram subidos pelo usuário e o documento **compila limpo**: 0 erros,
+10 avisos (todos benignos: `h`→`ht` de float e underfull hbox em tabelas), **nenhuma
+referência ou citação indefinida** (ou seja, nenhum `??` no PDF), **20 figuras**
+numeradas de 1 a 20 e **nenhuma caixa "[Diagrama pendente]"**. O diagrama de
+sequência (Figura 19) saiu em página própria, girado, legível. Com o Capítulo 5 fora
+da compilação, a lógica de negócio virou o Capítulo 5 e a IHC o Capítulo 6.
+
+Detalhe: na primeira tentativa o `bibliografia.bib` foi o único arquivo que não
+subiu (os outros 5 e as 11 figuras foram). A entrada `falbo:notas18` foi digitada
+direto no editor do Overleaf, em uma linha só — o conteúdo é o mesmo da cópia local,
+só a formatação difere.
+
 ## Bloqueios / pendências
 
-- **O T3 não está entregue.** Falta subir os 6 arquivos e as 11 figuras no Overleaf,
-  compilar, preencher as datas do T1 e do T2 no histórico de alterações da capa e
-  anexar o PDF no Classroom (passo a passo em `t3/COMO-ATUALIZAR-O-DOCUMENTO.md`).
+- **O T3 ainda não foi entregue no Classroom.** Falta preencher as datas do T1 e do T2
+  no histórico de alterações da capa, baixar o PDF e anexar na atividade (prazo 26/10).
 - **Não dá para compilar LaTeX nesta máquina** (sem distribuição local; só Overleaf).
-  A conferência possível sem compilar está automatizada em
-  `ferramentas/t3_check_latex.py` (refs, cites, figuras, ambientes e chaves) e passou
-  sem problemas.
+  A conferência estática está automatizada em `ferramentas/t3_check_latex.py`
+  (refs, cites, figuras, ambientes e chaves).
+- **Upload no Overleaf pelo painel embutido não funciona** (CSP bloqueia `fetch` e
+  `iframe` para servidor local; `Ctrl+V` sintético não lê a área de transferência).
+  Editar texto no editor e recompilar, isso funciona.
 - **Capítulo 5 fora da compilação** (duplicava o Capítulo 6). Se o time quiser
   mantê-lo, é descomentar no `main.tex` e desfazer o item 7 do `ALTERACOES.diff` —
   mas as enumerações dos dois capítulos voltam a se contradizer.
