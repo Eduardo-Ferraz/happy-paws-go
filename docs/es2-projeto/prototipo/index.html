@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Paws — protótipo de alta fidelidade (T3)</title>
+<style>
+  :root { --line:#e3e6ea; --muted:#6b7280; --primary:#1f7a5a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f5f6f8; color:#111827;
+         font:15px/1.5 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  header { background:#10241d; color:#fff; padding:28px 24px; }
+  header h1 { margin:0 0 6px; font-size:22px; }
+  header p { margin:0; color:#a9c4ba; font-size:13.5px; }
+  main { max-width:1280px; margin:0 auto; padding:24px 16px 64px; }
+  h2 { font-size:17px; margin:34px 0 4px; }
+  h2 + p { margin:0 0 16px; color:var(--muted); font-size:13px; }
+  .grid { display:grid; gap:20px;
+          grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); }
+  figure { margin:0; background:#fff; border:1px solid var(--line);
+           border-radius:14px; padding:12px; }
+  figure img { width:100%; display:block; border-radius:8px; }
+  figcaption { margin-top:10px; font-size:12.5px; }
+  figcaption b { display:block; font-size:13px; }
+  figcaption span { color:var(--muted); font-family:ui-monospace, Consolas, monospace;
+                    font-size:11.5px; }
+  .wide { grid-column:1 / -1; }
+  footer { color:var(--muted); font-size:12.5px; margin-top:40px;
+           border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Happy Paws — protótipo não funcional de alta fidelidade</h1>
+  <p>Engenharia de Software II (INF 16160) 2026/2 · UFES · T3 — Projeto da Interação
+     Humano-Computador</p>
+</header>
+<main>
+  <h2>Subsistema Gestão de Perfis</h2>
+  <p>Perfis Tutor e Passeador (375 × 812 px) e Atendente (1180 × 740 px).</p>
+  <div class="grid">
+    <figure><img src="proto-tela-01-login.svg" alt="Tela de login">
+      <figcaption><b>LoginPage</b><span>/entrar</span></figcaption></figure>
+    <figure><img src="proto-tela-02-cadastro-tutor.svg" alt="Cadastro de tutor">
+      <figcaption><b>CadastroTutorPage</b><span>/cadastro/tutor</span></figcaption></figure>
+    <figure><img src="proto-tela-03-meus-caes.svg" alt="Meus cães">
+      <figcaption><b>MeusCachorrosPage</b><span>/cachorros</span></figcaption></figure>
+    <figure><img src="proto-tela-04-envio-documentos.svg" alt="Envio de documentos">
+      <figcaption><b>EnvioDocumentosPage</b><span>/validacao</span></figcaption></figure>
+    <figure><img src="proto-tela-05-modo-trabalho.svg" alt="Modo de trabalho">
+      <figcaption><b>ModoTrabalhoPage</b><span>/modo-trabalho</span></figcaption></figure>
+    <figure class="wide"><img src="proto-tela-14-analise-validacao.svg"
+        alt="Análise de validação">
+      <figcaption><b>AnaliseValidacaoPage</b>
+        <span>/atendimento/validacoes/[id]</span></figcaption></figure>
+  </div>
+
+  <h2>Subsistema Serviços</h2>
+  <p>Do agendamento ao pagamento, à execução e à avaliação do passeio.</p>
+  <div class="grid">
+    <figure><img src="proto-tela-06-busca.svg" alt="Busca de passeadores">
+      <figcaption><b>BuscaPasseadoresPage</b><span>/passeadores</span></figcaption></figure>
+    <figure><img src="proto-tela-07-agendamento.svg" alt="Agendamento avulso">
+      <figcaption><b>AgendamentoAvulsoPage</b>
+        <span>/passeadores/[id]/agendar</span></figcaption></figure>
+    <figure><img src="proto-tela-08-pagamento.svg" alt="Pagamento">
+      <figcaption><b>PagamentoPage</b>
+        <span>/agendamentos/[id]/pagamento</span></figcaption></figure>
+    <figure><img src="proto-tela-09-acompanhamento.svg" alt="Acompanhamento do passeio">
+      <figcaption><b>AcompanhamentoPasseioPage</b>
+        <span>/passeios/[id]/acompanhar</span></figcaption></figure>
+    <figure><img src="proto-tela-10-execucao.svg" alt="Execução do passeio">
+      <figcaption><b>ExecucaoPasseioPage</b>
+        <span>/passeios/[id]/executar</span></figcaption></figure>
+    <figure><img src="proto-tela-11-avaliacao.svg" alt="Avaliação do passeio">
+      <figcaption><b>AvaliacaoPage</b>
+        <span>/passeios/[id]/avaliar</span></figcaption></figure>
+  </div>
+
+  <h2>Subsistema Suporte</h2>
+  <p>Abertura de chamado pelo usuário e fila de atendimento do Atendente.</p>
+  <div class="grid">
+    <figure><img src="proto-tela-12-abrir-chamado.svg" alt="Abrir chamado">
+      <figcaption><b>AbrirChamadoPage</b><span>/suporte/novo</span></figcaption></figure>
+    <figure class="wide"><img src="proto-tela-13-fila-atendimento.svg"
+        alt="Fila de atendimento">
+      <figcaption><b>FilaAtendimentoPage</b>
+        <span>/atendimento/chamados</span></figcaption></figure>
+  </div>
+
+  <footer>
+    Protótipo não funcional: as telas são imagens vetoriais (SVG), sem comportamento.
+    Cada arquivo tem o nome da página correspondente do pacote <code>cih</code>.
+    Equipe: Bernardo Vargens Broedel, Eduardo Capobiango Ferraz, Mateus Biancardi da
+    Silva, Miguel Zon Murad e Victor Augusto Fernandes Rangel.
+  </footer>
+</main>
+</body>
+</html>

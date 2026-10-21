@@ -1,0 +1,88 @@
+\chapter{Requisitos Não Funcionais}
+\label{sec-rnfs}
+\vspace{-1cm}
+
+A Tabela~\ref{tabela-rnfs} apresenta a especificação dos requisitos não funcionais identificados
+no Documento de Especificação de Requisitos, os quais foram
+considerados condutores da arquitetura.
+
+% Contador para IDs de Requisitos Não Funcionais.
+\newcounter{rnfcount}
+\renewcommand*\thernfcount{RNF-\arabic{rnfcount}}
+\newcommand*\RNF{\refstepcounter{rnfcount}\thernfcount}
+\setcounter{rnfcount}{0}
+
+\begin{footnotesize}
+\begin{longtable}{|r|p{13cm}|}
+	\caption{Especificação de Requisitos Não Funcionais.}
+	\label{tabela-rnfs}\\\hline
+
+	% RNF-1 -- Responsividade multiplataforma (RNF01 do ES1).
+	\multicolumn{2}{|p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}|}{\cellcolor{lightgray}\RNF\label{rnf-multiplataforma} -- O sistema deve possuir interface responsiva, operando em dispositivos móveis (Android/iOS) e navegadores web (RNF01 do Documento de Especificação de Requisitos).}\\\hline
+
+	Categoria: & Portabilidade \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Tática /\\Tratamento:} & Camada de abstração de plataforma: o sistema é uma única aplicação web em Next.js, com interface construída com Tailwind CSS (abordagem \textit{mobile-first}) e componentes shadcn/ui, que se adapta ao tamanho da tela e pode ser instalada como aplicativo (PWA) em Android e iOS. O mesmo código atende tutores, passeadores e atendentes, sem versões separadas por plataforma. \\\hline
+
+	Medida: & Quantidade de funcionalidades (\textit{user stories} US01 a US17) que podem ser executadas por completo nos navegadores e nas larguras de tela alvo. \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Critério de\\Aceitação:} & Todas as funcionalidades (US01 a US17) são executadas sem erro e sem rolagem horizontal nas versões atuais do Chrome (Android), do Safari (iOS) e do Chrome e do Firefox (\textit{desktop}), em telas com largura de 360 px ou mais. \\\hline
+
+	% Linha em branco.
+	\multicolumn{2}{c}{}\\\hline
+
+	% RNF-2 -- Segurança de dados de pagamento e localização (RNF02 do ES1).
+	\multicolumn{2}{|p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}|}{\cellcolor{lightgray}\RNF\label{rnf-seguranca-dados} -- Dados sensíveis de pagamento e localização devem ser criptografados (RNF02 do Documento de Especificação de Requisitos).}\\\hline
+
+	Categoria: & Segurança \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Tática /\\Tratamento:} & Criptografar dados em trânsito e em repouso e limitar a exposição dos dados: toda a comunicação (páginas, \textit{Server Actions} e canal de eventos em tempo real) usa HTTPS, e o banco PostgreSQL é hospedado com criptografia de armazenamento habilitada. O número completo do cartão de crédito não é armazenado: o processamento é delegado ao provedor de pagamento, por meio da interface \texttt{GatewayPagamento}, e o sistema guarda apenas o identificador da transação e os últimos dígitos do cartão. As coordenadas de GPS (\texttt{RegistroPasseio}) só são entregues, por sessão autenticada, ao tutor e ao passeador do Passeio correspondente. \\\hline
+
+	Medida: & Percentual das requisições da aplicação feitas sobre HTTPS; presença (ou ausência) de números completos de cartão de crédito no banco de dados; criptografia de armazenamento habilitada (ou não) no banco de dados. \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Critério de\\Aceitação:} & 100\% das requisições são feitas sobre HTTPS; nenhum número completo de cartão de crédito é persistido no banco de dados; a criptografia de armazenamento do banco de dados está habilitada; o acesso ao trajeto de um Passeio por usuário que não seja o tutor ou o passeador desse Passeio é recusado. \\\hline
+
+	% Linha em branco.
+	\multicolumn{2}{c}{}\\\hline
+
+	% RNF-3 -- Sincronia em tempo real entre Tutor e Passeador (RNF03 do ES1).
+	\multicolumn{2}{|p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}|}{\cellcolor{lightgray}\RNF\label{rnf-tempo-real} -- O sistema deve garantir a atualização de dados em tempo real para garantir a sincronia entre Tutor e Passeador (RNF03 do Documento de Especificação de Requisitos).}\\\hline
+
+	Categoria: & Eficiência \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Tática /\\Tratamento:} & Introduzir um canal de envio de eventos do servidor para o cliente: a posição do passeador durante o monitoramento GPS (US10), as mensagens do chat interno e os alertas de incidente são enviados por \textit{Server-Sent Events} (SSE), implementados por \textit{Route Handlers} do Next.js e acionados pela interface \texttt{NotificadorTempoReal}. O passeador envia suas posições ao servidor por requisição HTTP, e o servidor as repassa ao tutor pelo canal SSE, o que evita o uso de \textit{polling} periódico. Entre instâncias do servidor, os eventos são repassados pelo mecanismo LISTEN/NOTIFY do PostgreSQL. O SSE foi escolhido em lugar do WebSocket por funcionar com os \textit{Route Handlers} sem exigir um servidor customizado. \\\hline
+
+	Medida: & Latência entre a emissão de um evento (por exemplo, uma atualização de posição do passeador) e seu recebimento pelo cliente destinatário (tutor), sob condições normais de rede. \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Critério de\\Aceitação:} & A posição do passeador deve ser refletida no mapa do tutor em, no máximo, 3 segundos após a mudança de posição real, sob condições normais de conectividade (rede móvel 4G ou superior). \\\hline
+
+	% Linha em branco.
+	\multicolumn{2}{c}{}\\\hline
+
+	% RNF-4 -- Tempo de primeiro atendimento de suporte (RNF04 do ES1).
+	\multicolumn{2}{|p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}|}{\cellcolor{lightgray}\RNF\label{rnf-tempo-suporte} -- O suporte ao usuário deve realizar o primeiro atendimento em um tempo máximo de 30 minutos (RNF04 do Documento de Especificação de Requisitos).}\\\hline
+
+	Categoria: & Usabilidade \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Tática /\\Tratamento:} & Suportar a iniciativa do sistema (priorização automática): o horário de abertura de cada chamado é registrado e utilizado para calcular o tempo de espera diretamente na consulta que alimenta o painel do atendente, e chamados do tipo ``Emergência'' são automaticamente destacados e ordenados no topo da lista de atendimentos (CA17.2), reduzindo o tempo de triagem manual pela equipe de suporte. \\\hline
+
+	Medida: & Tempo decorrido entre a abertura de um chamado (registro do campo \texttt{dataAbertura} na classe Chamado) e a primeira resposta de um Atendente (\texttt{dataPrimeiraResposta}). \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Critério de\\Aceitação:} & Ao menos 95\% dos chamados devem receber uma primeira resposta do Atendente em até 30 minutos após sua abertura; chamados do tipo ``Emergência'' devem aparecer no topo da lista de atendimentos, independentemente da ordem de chegada. \\\hline
+
+	% Linha em branco.
+	\multicolumn{2}{c}{}\\\hline
+
+	% RNF-5 -- Eficiência energética da captura de GPS (RNF05 do ES1).
+	\multicolumn{2}{|p{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}|}{\cellcolor{lightgray}\RNF\label{rnf-eficiencia-gps} -- O sistema deve garantir que as coordenadas de GPS sejam atualizadas em segundo plano para economia de energia (RNF05 do Documento de Especificação de Requisitos).}\\\hline
+
+	Categoria: & Eficiência \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Tática /\\Tratamento:} & Gerenciar a demanda de recursos: a captura de coordenadas usa a \textit{Geolocation API} do navegador (\texttt{watchPosition}) somente enquanto o Passeio estiver com status ``iniciado'', com envio ao servidor em intervalo mínimo (por exemplo, a cada 5 segundos, em vez de a cada leitura) e encerramento da captura na conclusão do Passeio. A captura é feita com o aplicativo web aberto (instalado como PWA ou em uma aba do navegador); o rastreamento com a tela bloqueada depende do navegador e é uma limitação conhecida dessa plataforma. \\\hline
+
+	Medida: & Consumo de bateria do dispositivo do passeador atribuível ao rastreamento de GPS, por hora de passeio monitorado, medido em um aparelho de referência. \\\hline
+
+	\parbox[t]{2cm}{\raggedleft Critério de\\Aceitação:} & O rastreamento de GPS não deve consumir mais de 10\% da carga da bateria do aparelho de referência por hora de passeio monitorado, e nenhuma coordenada deve ser capturada fora do intervalo entre o início e o fim de um Passeio. \\\hline
+
+\end{longtable}
+\end{footnotesize}

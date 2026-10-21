@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="820" viewBox="0 0 1260 820">
+<rect x="0" y="0" width="1260" height="820" fill="#FFFFFF"/>
+<rect x="32.0" y="32.0" width="1196.0" height="756.0" fill="#1A1D21" rx="12.0" ry="12.0"/>
+<rect x="40.0" y="40.0" width="1180.0" height="740.0" fill="#F5F6F8" rx="6.0" ry="6.0"/>
+<rect x="40.0" y="40.0" width="1180.0" height="34.0" fill="#2A2E34" rx="6.0" ry="6.0"/>
+<rect x="40.0" y="62.0" width="1180.0" height="12.0" fill="#2A2E34"/>
+<circle cx="58.0" cy="57.0" r="5.0" fill="#FF5F57"/>
+<circle cx="74.0" cy="57.0" r="5.0" fill="#FEBC2E"/>
+<circle cx="90.0" cy="57.0" r="5.0" fill="#28C840"/>
+<rect x="110.0" y="48.0" width="1080.0" height="18.0" fill="#3A3F46" rx="9.0" ry="9.0"/>
+<text x="122.0" y="61.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#C9CDD3">happypaws.app/atendimento</text>
+<rect x="40.0" y="74.0" width="1180.0" height="706.0" fill="#F5F6F8"/>
+<rect x="40.0" y="74.0" width="210.0" height="706.0" fill="#10241D"/>
+<circle cx="72.0" cy="108.0" r="15.0" fill="#1F7A5A"/>
+<circle cx="72.0" cy="111.9" r="6.0" fill="#FFFFFF"/>
+<circle cx="63.0" cy="104.7" r="2.9" fill="#FFFFFF"/>
+<circle cx="68.5" cy="101.4" r="3.1" fill="#FFFFFF"/>
+<circle cx="75.5" cy="101.4" r="3.1" fill="#FFFFFF"/>
+<circle cx="81.0" cy="104.7" r="2.9" fill="#FFFFFF"/>
+<text x="96.0" y="113.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="bold">Happy Paws</text>
+<text x="64.0" y="150.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#7FA596" font-weight="bold">ATENDIMENTO</text>
+<text x="68.0" y="187.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#A9C4BA">Fila de chamados</text>
+<rect x="52.0" y="204.0" width="186.0" height="32.0" fill="#1C3E33" rx="8.0" ry="8.0"/>
+<text x="68.0" y="225.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="bold">Validações pendentes</text>
+<text x="68.0" y="263.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#A9C4BA">Indicadores</text>
+<rect x="250.0" y="74.0" width="970.0" height="72.0" fill="#FFFFFF"/>
+<line x1="250.0" y1="146.0" x2="1220.0" y2="146.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="278.0" y="108.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111827" font-weight="bold">Análise de validação</text>
+<text x="278.0" y="130.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">Rafael Souza · solicitada em 20/10/2026</text>
+<rect x="1050.0" y="102.0" width="73.2" height="20.0" fill="#FEF3C7" rx="10.0" ry="10.0"/>
+<text x="1086.6" y="115.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#B45309" font-weight="bold" text-anchor="middle">Em análise</text>
+<text x="278.0" y="180.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111827" font-weight="bold">Fila de validações</text>
+<rect x="278.0" y="194.0" width="300.0" height="62.0" fill="#E7F3EE" rx="10.0" ry="10.0" stroke="#1F7A5A" stroke-width="1.0"/>
+<circle cx="308.0" cy="225.0" r="17.0" fill="#FFFFFF"/>
+<text x="308.0" y="230.8" font-family="Helvetica, Arial, sans-serif" font-size="15.3" fill="#14543E" font-weight="bold" text-anchor="middle">RS</text>
+<text x="336.0" y="221.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Rafael Souza</text>
+<text x="336.0" y="239.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">20/10 · 3 documentos</text>
+<rect x="278.0" y="264.0" width="300.0" height="62.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<circle cx="308.0" cy="295.0" r="17.0" fill="#EEF1F4"/>
+<text x="308.0" y="300.8" font-family="Helvetica, Arial, sans-serif" font-size="15.3" fill="#14543E" font-weight="bold" text-anchor="middle">CF</text>
+<text x="336.0" y="291.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Camila Ferraz</text>
+<text x="336.0" y="309.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">20/10 · 3 documentos</text>
+<rect x="278.0" y="334.0" width="300.0" height="62.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<circle cx="308.0" cy="365.0" r="17.0" fill="#EEF1F4"/>
+<text x="308.0" y="370.8" font-family="Helvetica, Arial, sans-serif" font-size="15.3" fill="#14543E" font-weight="bold" text-anchor="middle">DM</text>
+<text x="336.0" y="361.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Diego Martins</text>
+<text x="336.0" y="379.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">19/10 · 2 documentos</text>
+<text x="606.0" y="182.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111827" font-weight="bold">Documentos enviados</text>
+<rect x="606.0" y="194.0" width="182.0" height="150.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="618.0" y="206.0" width="158.0" height="96.0" fill="#DDE3E8" rx="8.0" ry="8.0"/>
+<circle cx="697.0" cy="251.0" r="12.5" fill="#AEB6BF"/>
+<path d="M 626 294 L 691.0 256.0 L 707.0 294 Z" fill="#AEB6BF"/>
+<text x="620.0" y="320.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">RG (frente)</text>
+<text x="620.0" y="336.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6B7280">enviado em 20/10 14:02</text>
+<rect x="802.0" y="194.0" width="182.0" height="150.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="814.0" y="206.0" width="158.0" height="96.0" fill="#DDE3E8" rx="8.0" ry="8.0"/>
+<circle cx="893.0" cy="251.0" r="12.5" fill="#AEB6BF"/>
+<path d="M 822 294 L 887.0 256.0 L 903.0 294 Z" fill="#AEB6BF"/>
+<text x="816.0" y="320.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">RG (verso)</text>
+<text x="816.0" y="336.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6B7280">enviado em 20/10 14:02</text>
+<rect x="998.0" y="194.0" width="182.0" height="150.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="1010.0" y="206.0" width="158.0" height="96.0" fill="#DDE3E8" rx="8.0" ry="8.0"/>
+<circle cx="1089.0" cy="251.0" r="12.5" fill="#AEB6BF"/>
+<path d="M 1018 294 L 1083.0 256.0 L 1099.0 294 Z" fill="#AEB6BF"/>
+<text x="1012.0" y="320.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">Selfie com documento</text>
+<text x="1012.0" y="336.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6B7280">enviado em 20/10 14:05</text>
+<rect x="606.0" y="362.0" width="570.0" height="116.0" fill="#FFFFFF" rx="12.0" ry="12.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="624.0" y="388.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111827" font-weight="bold">Dados declarados</text>
+<text x="624.0" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">CPF</text>
+<text x="756.0" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#111827">987.654.321-00</text>
+<text x="624.0" y="432.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">Nome</text>
+<text x="756.0" y="432.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#111827">Rafael Souza de Almeida</text>
+<text x="624.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">Nascimento</text>
+<text x="756.0" y="452.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#111827">14/03/1996</text>
+<text x="606.0" y="506.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Motivo da reprovação (obrigatório ao reprovar)</text>
+<rect x="606.0" y="514.0" width="570.0" height="54.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="620.0" y="546.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">Ex.: a selfie não confere com o documento enviado.</text>
+<rect x="606.0" y="584.0" width="270.0" height="46.0" fill="#1F7A5A" rx="10.0" ry="10.0"/>
+<text x="741.0" y="612.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#FFFFFF" font-weight="bold" text-anchor="middle">Aprovar validação</text>
+<rect x="906.0" y="584.0" width="270.0" height="46.0" fill="#DC2626" rx="10.0" ry="10.0"/>
+<text x="1041.0" y="612.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#FFFFFF" font-weight="bold" text-anchor="middle">Reprovar</text>
+</svg>

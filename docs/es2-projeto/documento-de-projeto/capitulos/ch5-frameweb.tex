@@ -1,0 +1,105 @@
+\chapter{Projeto dos Componentes da Arquitetura}
+\label{sec-componentes}
+\vspace{-1cm}
+
+Como mostra a Figura~\ref{figura-arquitetura}, o sistema Happy Paws tem três subsistemas: Gestão de Perfis, Serviços e Suporte. Cada um deles é dividido em três camadas: Apresentação, Negócio e Acesso a Dados. Nas seções seguintes, cada subsistema é detalhado, mostrando os modelos de projeto de cada camada.
+
+
+\section{Subsistema Gestão de Perfis}
+\label{sec-componentes-perfis}
+
+O subsistema Gestão de Perfis cuida do cadastro de tutores, cães e passeadores. Ele também cuida da validação de identidade dos passeadores e do compartilhamento de perfis de cães entre tutores (US01 a US06).
+
+
+\subsection{Camada de Negócio}
+\label{sec-componentes-perfis-negocio}
+
+Esta camada tem as regras do subsistema, feitas com \emph{Server Actions}. As principais são:
+
+\begin{itemize}
+	\item Não deixar cadastrar dois Tutores ou dois Passeadores com o mesmo CPF ou e-mail (RI-1 e RI-2);
+	\item Garantir que todo Cachorro tenha pelo menos um Tutor (RI-3);
+	\item Não deixar um Passeador ter mais de uma Validação ao mesmo tempo (RI-4);
+	\item Checar se a data de envio dos Documentos é anterior ou igual à data da Validação (RI-5);
+	\item Cuidar do convite e do aceite quando um Tutor compartilha o perfil de um cão com outro Tutor (US05).
+\end{itemize}
+
+
+\subsection{Camada de Apresentação}
+\label{sec-componentes-perfis-apresentacao}
+
+Esta camada tem as telas de cadastro de Tutor e de Passeador, a tela de cadastro de cão, a tela de compartilhamento de perfil de pet e a tela usada pelo Atendente para validar documentos, conforme as telas mostradas nas Figuras 1 a 6 do documento de requisitos.
+
+
+\subsection{Camada de Acesso a Dados}
+\label{sec-componentes-perfis-dados}
+
+Esta camada guarda e busca os dados do subsistema no banco PostgreSQL, usando o Drizzle ORM. Ela é formada pelos repositórios: \texttt{TutorRepository}, \texttt{PasseadorRepository}, \texttt{CachorroRepository}, \texttt{EnderecoRepository} e \texttt{DocumentoRepository}, que seguem as classes do diagrama de classes do subsistema (Figura 35 do documento de requisitos).
+
+
+
+\section{Subsistema Serviços}
+\label{sec-componentes-servicos}
+
+O subsistema Serviços cuida da busca por passeadores, do agendamento de passeios (avulsos ou fixos), da execução do passeio em tempo real (GPS, alertas e fotos), do pagamento, da avaliação e das conquistas do pet (US07 a US15).
+
+
+\subsection{Camada de Negócio}
+\label{sec-componentes-servicos-negocio}
+
+Esta camada tem as principais regras do sistema. As principais são:
+
+\begin{itemize}
+	\item Não deixar o horário de um Agendamento ser antes da data do próprio Agendamento (RI-1);
+	\item Checar se o início e o fim reais de um Passeio batem com o Agendamento (RI-2 e RI-3);
+	\item Só confirmar um Agendamento quando o Pagamento estiver como "Pago" (RI-4);
+	\item Não deixar o mesmo Cachorro em dois Agendamentos confirmados ou pendentes no mesmo horário (RI-5);
+	\item Não deixar passar o limite de cães do Passeador em um mesmo horário (RI-6);
+	\item Atualizar o status do Passeio ("iniciado", "concluído") e guardar o trajeto do GPS;
+	\item Dar conquistas ao Cachorro de forma automática, com base no histórico de passeios (US13).
+\end{itemize}
+
+
+\subsection{Camada de Apresentação}
+\label{sec-componentes-servicos-apresentacao}
+
+Esta camada tem as telas de busca de passeadores, de agendamento (avulso e fixo), de acompanhamento do trajeto pelo GPS, de postagem de fotos, de pagamento e de avaliação do passeio, conforme as telas mostradas nas Figuras 7 a 24 do documento de requisitos.
+
+
+\subsection{Camada de Acesso a Dados}
+\label{sec-componentes-servicos-dados}
+
+Esta camada guarda e busca os dados do subsistema no banco, usando o Drizzle ORM. Ela é formada pelos repositórios: \texttt{AgendamentoRepository}, \texttt{PasseioRepository}, \texttt{RegistroPasseioRepository}, \texttt{PagamentoRepository}, \texttt{AvaliacaoRepository}, \texttt{FotoRepository} e \texttt{ConquistaRepository}, que seguem as classes do diagrama de classes do subsistema (Figura 36 do documento de requisitos).
+
+
+
+\section{Subsistema Suporte}
+\label{sec-componentes-suporte}
+
+O subsistema Suporte cuida dos chamados abertos por Tutores ou Passeadores e do atendimento feito pelos Atendentes (US16 e US17).
+
+
+\subsection{Camada de Negócio}
+\label{sec-componentes-suporte-negocio}
+
+Esta camada tem as regras de abertura e atendimento dos chamados. As principais são:
+
+\begin{itemize}
+	\item Exigir o tipo do problema e uma descrição para abrir o chamado;
+	\item Gerar um número de protocolo e colocar o status inicial como "Em análise";
+	\item Mudar o status do chamado para "Em atendimento" quando o Atendente responder;
+	\item Colocar os chamados do tipo "Emergência" no topo da lista de atendimento;
+	\item Guardar o horário de cada resposta do Atendente, para controle interno.
+\end{itemize}
+
+
+\subsection{Camada de Apresentação}
+\label{sec-componentes-suporte-apresentacao}
+
+Esta camada tem a tela de abertura de chamado, usada por Tutores e Passeadores, e as telas da central de atendimento, usadas pelo Atendente, conforme as telas mostradas nas Figuras 25 a 30 do documento de requisitos.
+
+
+\subsection{Camada de Acesso a Dados}
+\label{sec-componentes-suporte-dados}
+
+Esta camada guarda e busca os dados do subsistema no banco, usando o Drizzle ORM. Ela é formada pelo repositório \texttt{ChamadoRepository}, que segue a classe do diagrama de classes do subsistema (Figura 37 do documento de requisitos).

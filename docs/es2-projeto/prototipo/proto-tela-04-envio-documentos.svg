@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="455" height="892" viewBox="0 0 455 892">
+<rect x="0" y="0" width="455" height="892" fill="#FFFFFF"/>
+<rect x="30.0" y="30.0" width="395.0" height="832.0" fill="#1A1D21" rx="30.0" ry="30.0"/>
+<rect x="40.0" y="40.0" width="375.0" height="812.0" fill="#F5F6F8" rx="22.0" ry="22.0"/>
+<text x="62.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">9:41</text>
+<rect x="339.0" y="58.0" width="4.0" height="4.0" fill="#111827" rx="1.0" ry="1.0"/>
+<rect x="345.0" y="56.0" width="4.0" height="6.0" fill="#111827" rx="1.0" ry="1.0"/>
+<rect x="351.0" y="54.0" width="4.0" height="8.0" fill="#111827" rx="1.0" ry="1.0"/>
+<rect x="357.0" y="52.0" width="4.0" height="10.0" fill="#111827" rx="1.0" ry="1.0"/>
+<rect x="371.0" y="53.0" width="22.0" height="10.0" fill="none" rx="3.0" ry="3.0" stroke="#111827" stroke-width="1"/>
+<rect x="373.0" y="55.0" width="15.0" height="6.0" fill="#111827" rx="1.5" ry="1.5"/>
+<rect x="167.5" y="842.0" width="120.0" height="4.0" fill="#C9CDD3" rx="2.0" ry="2.0"/>
+<rect x="40.0" y="76.0" width="375.0" height="776.0" fill="#F5F6F8"/>
+<rect x="40.0" y="76.0" width="375.0" height="70.0" fill="#1F7A5A"/>
+<path d="M 66 98 L 56 104 L 66 110" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="78.0" y="103.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">Validação de identidade</text>
+<text x="78.0" y="121.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#D7EBE2">Rafael Souza · Passeador</text>
+<rect x="60.0" y="160.0" width="73.2" height="20.0" fill="#FEF3C7" rx="10.0" ry="10.0"/>
+<text x="96.6" y="173.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#B45309" font-weight="bold" text-anchor="middle">Em análise</text>
+<text x="143.2" y="174.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">enviado em 20/10/2026</text>
+<rect x="60.0" y="194.0" width="335.0" height="56.0" fill="#FEF3C7" rx="10.0" ry="10.0"/>
+<circle cx="82.0" cy="222.0" r="9.0" fill="#B45309"/>
+<text x="82.0" y="226.5" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#FEF3C7" font-weight="bold" text-anchor="middle">!</text>
+<text x="100.0" y="216.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#B45309" font-weight="bold">Validação em andamento</text>
+<text x="100.0" y="233.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#B45309">Você aparecerá nas buscas assim que for aprovado.</text>
+<text x="60.0" y="274.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Documentos enviados</text>
+<rect x="60.0" y="288.0" width="335.0" height="70.0" fill="#FFFFFF" rx="12.0" ry="12.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="72.0" y="299.0" width="64.0" height="48.0" fill="#DDE3E8" rx="8.0" ry="8.0"/>
+<circle cx="104.0" cy="320.0" r="6.2" fill="#AEB6BF"/>
+<path d="M 80 339 L 98.0 325.0 L 114.0 339 Z" fill="#AEB6BF"/>
+<text x="148.0" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">RG (frente e verso)</text>
+<text x="148.0" y="336.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">tipo: RG</text>
+<rect x="305.0" y="313.0" width="61.8" height="20.0" fill="#DCFCE7" rx="10.0" ry="10.0"/>
+<text x="335.9" y="326.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#16A34A" font-weight="bold" text-anchor="middle">Recebido</text>
+<rect x="60.0" y="368.0" width="335.0" height="70.0" fill="#FFFFFF" rx="12.0" ry="12.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="72.0" y="379.0" width="64.0" height="48.0" fill="#DDE3E8" rx="8.0" ry="8.0"/>
+<circle cx="104.0" cy="400.0" r="6.2" fill="#AEB6BF"/>
+<path d="M 80 419 L 98.0 405.0 L 114.0 419 Z" fill="#AEB6BF"/>
+<text x="148.0" y="398.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">CNH</text>
+<text x="148.0" y="416.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">tipo: CNH</text>
+<rect x="305.0" y="393.0" width="61.8" height="20.0" fill="#DCFCE7" rx="10.0" ry="10.0"/>
+<text x="335.9" y="406.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#16A34A" font-weight="bold" text-anchor="middle">Recebido</text>
+<rect x="60.0" y="448.0" width="335.0" height="70.0" fill="#FFFFFF" rx="12.0" ry="12.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="72.0" y="459.0" width="64.0" height="48.0" fill="#DDE3E8" rx="8.0" ry="8.0"/>
+<circle cx="104.0" cy="480.0" r="6.2" fill="#AEB6BF"/>
+<path d="M 80 499 L 98.0 485.0 L 114.0 499 Z" fill="#AEB6BF"/>
+<text x="148.0" y="478.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Selfie com documento</text>
+<text x="148.0" y="496.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">tipo: Selfie</text>
+<rect x="305.0" y="473.0" width="61.8" height="20.0" fill="#DCFCE7" rx="10.0" ry="10.0"/>
+<text x="335.9" y="486.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#16A34A" font-weight="bold" text-anchor="middle">Recebido</text>
+<rect x="60.0" y="530.0" width="335.0" height="46.0" fill="#E8EAEE" rx="10.0" ry="10.0"/>
+<text x="227.5" y="558.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#9AA0A8" font-weight="bold" text-anchor="middle">Enviar documentos</text>
+<text x="227.5" y="592.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280" text-anchor="middle">Já existe uma validação em andamento (RI-4).</text>
+<text x="60.0" y="626.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Enquanto isso</text>
+<rect x="60.0" y="640.0" width="335.0" height="66.0" fill="#FFFFFF" rx="12.0" ry="12.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="76.0" y="666.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#111827" font-weight="bold">Defina seu modo de trabalho</text>
+<text x="76.0" y="686.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280">preço, limite de cães e portes aceitos</text>
+<path d="M 371.0 667 L 379.0 673 L 371.0 679" fill="none" stroke="#6B7280" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

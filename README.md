@@ -1,4 +1,18 @@
-# Welcome to your Lovable project
+# Happy Paws
+
+Plataforma de intermediação entre tutores de cães e passeadores (*dog walkers*).
+Este repositório tem o **protótipo navegável** (React + Vite + shadcn/ui, em `src/`),
+publicado em <https://happypawss.lovable.app>, e a **documentação das duas disciplinas**
+em que o sistema foi trabalhado na UFES:
+
+- 📄 **[`docs/`](docs/) — índice da documentação**
+  - [`docs/es1-requisitos/`](docs/es1-requisitos/) — Engenharia de Software I (2025/2):
+    requisitos, user stories, critérios de aceitação e modelagem conceitual.
+  - [`docs/es2-projeto/`](docs/es2-projeto/) — Engenharia de Software II (2026/2):
+    projeto do sistema (arquitetura, CDP, CGT, CIU), protótipo de alta fidelidade e
+    fontes LaTeX do documento de projeto.
+
+---
 
 ## Project info
 

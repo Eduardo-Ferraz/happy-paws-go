@@ -1,0 +1,67 @@
+% ==============================================================================
+% Projeto de Sistema - Nome do Aluno
+% Capítulo 2 - Plataforma de Desenvolvimento
+% ==============================================================================
+\chapter{Plataforma de Desenvolvimento}
+\label{sec-plataforma}
+\vspace{-1cm}
+
+
+
+%=======================================================================================================
+%			Tabela de Plataforma de Desenvolvimento e Tecnologias Utilizadas
+%=======================================================================================================
+
+Na Tabela~\ref{tabela-plataforma} são listadas as tecnologias utilizadas no desenvolvimento da ferramenta, bem como o propósito de sua utilização.
+
+\begin{footnotesize}
+\begin{longtable}{|p{2.5cm}|c|p{5cm}|p{5.5cm}|}
+	\caption{Plataforma de Desenvolvimento e Tecnologias Utilizadas.}	
+	\label{tabela-plataforma}\\\hline
+
+	\rowcolor{lightgray}
+	\textbf{Tecnologia} & \textbf{Versão} & \textbf{Descrição} & \textbf{Propósito} \\\hline 
+	\endfirsthead
+	\hline
+	\rowcolor{lightgray}
+	\textbf{Tecnologia} & \textbf{Versão} & \textbf{Descrição} & \textbf{Propósito} \\\hline 
+	\endhead
+		
+	Next.js & 16.3 & Framework React para desenvolvimento web full-stack, com suporte a renderização no servidor (SSR/SSG) e rotas de API integradas & Base do desenvolvimento da aplicação, unificando front-end e back-end em um único projeto \\ \hline
+	TypeScript & 7.0 & Superset do JavaScript que adiciona tipagem estática ao código & Garantir maior segurança e manutenibilidade do código, reduzindo erros em tempo de execução \\ \hline
+	PostgreSQL & 18.0 & Sistema de gerenciamento de banco de dados relacional (SGBD) open-source & Armazenamento e persistência dos dados da aplicação \\ \hline
+	Drizzle ORM & 0.45 & ORM (\textit{Object-Relational Mapper}) leve e \textit{type-safe} para TypeScript & Mediar a comunicação entre a aplicação e o banco PostgreSQL de forma tipada, sem necessidade de SQL manual \\ \hline
+	Better Auth & --- & Biblioteca de autenticação para TypeScript que executa dentro da própria aplicação e guarda usuários, sessões e credenciais no banco de dados, com adaptador para o Drizzle ORM & Cadastro e login por e-mail e senha, gerenciamento de sessões, armazenamento seguro das senhas e proteção das telas e \textit{Server Actions} conforme o perfil do usuário (Tutor, Passeador ou Atendente) \\ \hline
+	Tailwind CSS & 4.3 & Framework CSS \textit{utility-first} para estilização de interfaces & Estilização rápida e consistente dos componentes visuais do sistema \\ \hline
+	shadcn/ui & --- & Coleção de componentes de interface reutilizáveis sobre Radix UI e Tailwind, instalada via CLI & Acelerar o desenvolvimento do front-end com componentes prontos e customizáveis \\ \hline
+
+\end{longtable}
+\end{footnotesize}
+
+
+%=======================================================================================================
+%			Tabela de Softwares de Apoio ao Desenvolvimento do Projeto
+%=======================================================================================================
+
+Na Tabela~\ref{tabela-software} vemos os softwares que apoiaram o desenvolvimento de documentos e também do código fonte.
+
+\begin{footnotesize}
+\begin{longtable}{|p{2.5cm}|c|p{5cm}|p{5.5cm}|}
+	\caption{Softwares de Apoio ao Desenvolvimento do Projeto}	
+	\label{tabela-software}\\\hline
+	
+	\rowcolor{lightgray}
+	\textbf{Tecnologia} & \textbf{Versão} & \textbf{Descrição} & \textbf{Propósito} \\\hline 
+	\endfirsthead
+	\hline
+	\rowcolor{lightgray}
+	\textbf{Tecnologia} & \textbf{Versão} & \textbf{Descrição} & \textbf{Propósito} \\\hline 
+	\endhead
+		
+	WebStorm & 2026.2 & IDE da JetBrains voltada para desenvolvimento JavaScript/TypeScript, com suporte nativo a frameworks como Next.js e React & Escrita, depuração e navegação no código-fonte da aplicação \\ \hline
+	Git & 2.55 & Sistema de controle de versão distribuído & Versionamento do código-fonte e rastreamento do histórico de alterações \\ \hline
+	GitHub & --- & Plataforma de hospedagem de repositórios Git, com suporte a \textit{pull requests}, \textit{issues} e integração contínua & Hospedagem do repositório remoto e colaboração entre os membros da equipe \\ \hline
+	Overleaf (LaTeX) & --- & Plataforma online de edição colaborativa de documentos em LaTeX & Elaboração e formatação da documentação do projeto (como este documento) \\ \hline
+	Trello & --- & Ferramenta de gerenciamento de projetos baseada em quadros \textit{Kanban} & Organização, distribuição e acompanhamento das tarefas da equipe \\ \hline
+\end{longtable}
+\end{footnotesize}

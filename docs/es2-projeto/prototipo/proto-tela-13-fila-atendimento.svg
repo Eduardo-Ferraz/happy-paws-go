@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="820" viewBox="0 0 1260 820">
+<rect x="0" y="0" width="1260" height="820" fill="#FFFFFF"/>
+<rect x="32.0" y="32.0" width="1196.0" height="756.0" fill="#1A1D21" rx="12.0" ry="12.0"/>
+<rect x="40.0" y="40.0" width="1180.0" height="740.0" fill="#F5F6F8" rx="6.0" ry="6.0"/>
+<rect x="40.0" y="40.0" width="1180.0" height="34.0" fill="#2A2E34" rx="6.0" ry="6.0"/>
+<rect x="40.0" y="62.0" width="1180.0" height="12.0" fill="#2A2E34"/>
+<circle cx="58.0" cy="57.0" r="5.0" fill="#FF5F57"/>
+<circle cx="74.0" cy="57.0" r="5.0" fill="#FEBC2E"/>
+<circle cx="90.0" cy="57.0" r="5.0" fill="#28C840"/>
+<rect x="110.0" y="48.0" width="1080.0" height="18.0" fill="#3A3F46" rx="9.0" ry="9.0"/>
+<text x="122.0" y="61.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#C9CDD3">happypaws.app/atendimento</text>
+<rect x="40.0" y="74.0" width="1180.0" height="706.0" fill="#F5F6F8"/>
+<rect x="40.0" y="74.0" width="210.0" height="706.0" fill="#10241D"/>
+<circle cx="72.0" cy="108.0" r="15.0" fill="#1F7A5A"/>
+<circle cx="72.0" cy="111.9" r="6.0" fill="#FFFFFF"/>
+<circle cx="63.0" cy="104.7" r="2.9" fill="#FFFFFF"/>
+<circle cx="68.5" cy="101.4" r="3.1" fill="#FFFFFF"/>
+<circle cx="75.5" cy="101.4" r="3.1" fill="#FFFFFF"/>
+<circle cx="81.0" cy="104.7" r="2.9" fill="#FFFFFF"/>
+<text x="96.0" y="113.0" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="bold">Happy Paws</text>
+<text x="64.0" y="150.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#7FA596" font-weight="bold">ATENDIMENTO</text>
+<rect x="52.0" y="166.0" width="186.0" height="32.0" fill="#1C3E33" rx="8.0" ry="8.0"/>
+<text x="68.0" y="187.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="bold">Fila de chamados</text>
+<text x="68.0" y="225.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#A9C4BA">Validações pendentes</text>
+<text x="68.0" y="263.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#A9C4BA">Indicadores</text>
+<text x="64.0" y="718.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#7FA596">Atendente</text>
+<text x="64.0" y="738.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="bold">Paula Ribeiro</text>
+<rect x="250.0" y="74.0" width="970.0" height="72.0" fill="#FFFFFF"/>
+<line x1="250.0" y1="146.0" x2="1220.0" y2="146.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="278.0" y="108.0" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#111827" font-weight="bold">Fila de chamados</text>
+<text x="278.0" y="130.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280">21/10/2026 · 14 chamados abertos</text>
+<rect x="920.0" y="92.0" width="128.0" height="38.0" fill="#DCFCE7" rx="8.0" ry="8.0"/>
+<text x="984.0" y="110.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#16A34A" font-weight="bold" text-anchor="middle">97%</text>
+<text x="984.0" y="124.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#16A34A" text-anchor="middle">em até 30 min</text>
+<rect x="1060.0" y="92.0" width="128.0" height="38.0" fill="#FEF3C7" rx="8.0" ry="8.0"/>
+<text x="1124.0" y="110.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#B45309" font-weight="bold" text-anchor="middle">12 min</text>
+<text x="1124.0" y="124.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#B45309" text-anchor="middle">maior espera</text>
+<rect x="278.0" y="166.0" width="55.3" height="30.0" fill="#E7F3EE" rx="15.0" ry="15.0" stroke="#1F7A5A" stroke-width="1.0"/>
+<text x="305.7" y="185.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#14543E" font-weight="bold" text-anchor="middle">Todos</text>
+<rect x="341.3" y="166.0" width="82.9" height="30.0" fill="#FFFFFF" rx="15.0" ry="15.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="382.8" y="185.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280" text-anchor="middle">Emergência</text>
+<rect x="432.2" y="166.0" width="82.9" height="30.0" fill="#FFFFFF" rx="15.0" ry="15.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="473.7" y="185.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280" text-anchor="middle">Financeiro</text>
+<rect x="523.1" y="166.0" width="65.2" height="30.0" fill="#FFFFFF" rx="15.0" ry="15.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="555.7" y="185.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280" text-anchor="middle">Técnico</text>
+<rect x="596.3" y="166.0" width="71.1" height="30.0" fill="#FFFFFF" rx="15.0" ry="15.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="631.9" y="185.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6B7280" text-anchor="middle">Denúncia</text>
+<rect x="278.0" y="214.0" width="914.0" height="36.0" fill="#EDF0F3" rx="8.0" ry="8.0"/>
+<text x="294.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Protocolo</text>
+<text x="444.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Tipo</text>
+<text x="584.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Solicitante</text>
+<text x="764.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Aberto em</text>
+<text x="904.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Espera</text>
+<text x="1014.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280" font-weight="bold">Status</text>
+<rect x="278.0" y="258.0" width="914.0" height="48.0" fill="#FEE2E2" rx="8.0" ry="8.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="278.0" y="258.0" width="4.0" height="48.0" fill="#DC2626" rx="2.0" ry="2.0"/>
+<text x="294.0" y="287.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">EMG-2026-002</text>
+<rect x="444.0" y="272.0" width="73.2" height="20.0" fill="#FEE2E2" rx="10.0" ry="10.0"/>
+<text x="480.6" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#DC2626" font-weight="bold" text-anchor="middle">Emergência</text>
+<text x="584.0" y="287.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">Marina Alves (Tutora)</text>
+<text x="764.0" y="287.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">14:02</text>
+<text x="904.0" y="287.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#DC2626" font-weight="bold">12 min</text>
+<rect x="1014.0" y="272.0" width="73.2" height="20.0" fill="#FEF3C7" rx="10.0" ry="10.0"/>
+<text x="1050.6" y="285.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#B45309" font-weight="bold" text-anchor="middle">Em análise</text>
+<text x="1164.0" y="287.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1F7A5A" font-weight="bold" text-anchor="end">Atender</text>
+<rect x="278.0" y="314.0" width="914.0" height="48.0" fill="#FEE2E2" rx="8.0" ry="8.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<rect x="278.0" y="314.0" width="4.0" height="48.0" fill="#DC2626" rx="2.0" ry="2.0"/>
+<text x="294.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">EMG-2026-001</text>
+<rect x="444.0" y="328.0" width="73.2" height="20.0" fill="#FEE2E2" rx="10.0" ry="10.0"/>
+<text x="480.6" y="341.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#DC2626" font-weight="bold" text-anchor="middle">Emergência</text>
+<text x="584.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">Diego Martins (Passeador)</text>
+<text x="764.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">13:58</text>
+<text x="904.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#DC2626" font-weight="bold">16 min</text>
+<rect x="1014.0" y="328.0" width="96.1" height="20.0" fill="#DBEAFE" rx="10.0" ry="10.0"/>
+<text x="1062.1" y="341.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#2563EB" font-weight="bold" text-anchor="middle">Em atendimento</text>
+<text x="1164.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1F7A5A" font-weight="bold" text-anchor="end">Atender</text>
+<rect x="278.0" y="370.0" width="914.0" height="48.0" fill="#FFFFFF" rx="8.0" ry="8.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="294.0" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">FIN-2026-118</text>
+<rect x="444.0" y="384.0" width="73.2" height="20.0" fill="#EEF1F4" rx="10.0" ry="10.0"/>
+<text x="480.6" y="397.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280" font-weight="bold" text-anchor="middle">Financeiro</text>
+<text x="584.0" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">Camila Ferraz (Tutora)</text>
+<text x="764.0" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">13:40</text>
+<text x="904.0" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">34 min</text>
+<rect x="1014.0" y="384.0" width="96.1" height="20.0" fill="#DBEAFE" rx="10.0" ry="10.0"/>
+<text x="1062.1" y="397.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#2563EB" font-weight="bold" text-anchor="middle">Em atendimento</text>
+<text x="1164.0" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1F7A5A" font-weight="bold" text-anchor="end">Atender</text>
+<rect x="278.0" y="426.0" width="914.0" height="48.0" fill="#FFFFFF" rx="8.0" ry="8.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="294.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">TEC-2026-233</text>
+<rect x="444.0" y="440.0" width="56.1" height="20.0" fill="#EEF1F4" rx="10.0" ry="10.0"/>
+<text x="472.0" y="453.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280" font-weight="bold" text-anchor="middle">Técnico</text>
+<text x="584.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">Rafael Souza (Passeador)</text>
+<text x="764.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">13:21</text>
+<text x="904.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">53 min</text>
+<rect x="1014.0" y="440.0" width="73.2" height="20.0" fill="#FEF3C7" rx="10.0" ry="10.0"/>
+<text x="1050.6" y="453.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#B45309" font-weight="bold" text-anchor="middle">Em análise</text>
+<text x="1164.0" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1F7A5A" font-weight="bold" text-anchor="end">Atender</text>
+<rect x="278.0" y="482.0" width="914.0" height="48.0" fill="#FFFFFF" rx="8.0" ry="8.0" stroke="#E3E6EA" stroke-width="1.0"/>
+<text x="294.0" y="511.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827" font-weight="bold">DEN-2026-009</text>
+<rect x="444.0" y="496.0" width="61.8" height="20.0" fill="#EEF1F4" rx="10.0" ry="10.0"/>
+<text x="474.9" y="509.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6B7280" font-weight="bold" text-anchor="middle">Denúncia</text>
+<text x="584.0" y="511.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">Marina Alves (Tutora)</text>
+<text x="764.0" y="511.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">12:55</text>
+<text x="904.0" y="511.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#111827">1 h 19</text>
+<rect x="1014.0" y="496.0" width="67.5" height="20.0" fill="#DCFCE7" rx="10.0" ry="10.0"/>
+<text x="1047.8" y="509.5" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#16A34A" font-weight="bold" text-anchor="middle">Resolvido</text>
+<text x="1164.0" y="511.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1F7A5A" font-weight="bold" text-anchor="end">Ver</text>
+<text x="278.0" y="558.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">Os chamados de Emergência aparecem sempre no topo da fila, com o tempo de espera em destaque (RNF-4 / CA17.2).</text>
+</svg>

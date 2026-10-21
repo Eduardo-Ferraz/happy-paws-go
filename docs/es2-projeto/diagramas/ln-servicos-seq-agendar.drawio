@@ -1,0 +1,177 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sequência agendarPasseio" id="d1">
+    <mxGraphModel dx="975" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c3" parent="1" style="text;html=0;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;" value="Diagrama de sequência: agendarPasseio" vertex="1">
+          <mxGeometry height="24" width="700" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;size=40;fontSize=11;" value="Tutor" vertex="1">
+          <mxGeometry height="878" width="160" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#E1D5E7;strokeColor=#9673A6;" value=":TelaAgendamento" vertex="1">
+          <mxGeometry height="878" width="160" x="195" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" value=":AplAgendamento" vertex="1">
+          <mxGeometry height="878" width="160" x="370" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#F5F5F5;strokeColor=#666666;" value=":TutorRepository" vertex="1">
+          <mxGeometry height="878" width="160" x="545" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#F5F5F5;strokeColor=#666666;" value=":PasseadorRepository" vertex="1">
+          <mxGeometry height="878" width="160" x="720" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#F5F5F5;strokeColor=#666666;" value=":CachorroRepository" vertex="1">
+          <mxGeometry height="878" width="160" x="895" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#F5F5F5;strokeColor=#666666;" value=":AgendamentoRepository" vertex="1">
+          <mxGeometry height="878" width="160" x="1070" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6B656;" value="ag:Agendamento" vertex="1">
+          <mxGeometry height="600" width="160" x="1245" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=0;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=40;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6B656;" value="pag:Pagamento" vertex="1">
+          <mxGeometry height="280" width="160" x="1420" y="658" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="html=0;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" value="" vertex="1">
+          <mxGeometry height="730" width="10" x="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="html=0;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#333333;" value="" vertex="1">
+          <mxGeometry height="654" width="10" x="445" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="1: informa passeador, cães e horário">
+          <mxGeometry relative="1" x="-0.0588" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="100" y="130" as="sourcePoint" />
+            <mxPoint x="270" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="2: agendarPasseio(dados)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="168" as="sourcePoint" />
+            <mxPoint x="445" y="168" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="3: buscarPorId(tutorId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="206" as="sourcePoint" />
+            <mxPoint x="625" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="4: buscarPorId(passeadorId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="244" as="sourcePoint" />
+            <mxPoint x="800" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="6: buscarPorIds(cachorroIds)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="320" as="sourcePoint" />
+            <mxPoint x="975" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c20" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="7: «create» Agendamento(tutor, passeador, caes, inicio, duracao)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="358" as="sourcePoint" />
+            <mxPoint x="1245" y="358" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="8: buscarAtivosNoHorario(passeadorId, cachorroIds, inicio, fim)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="426" as="sourcePoint" />
+            <mxPoint x="1150" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c22" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;fontSize=10;rounded=0;" value="existentes: Agendamento[]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="464" as="sourcePoint" />
+            <mxPoint x="455" y="464" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="9: conflitaCom(existente)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="534" as="sourcePoint" />
+            <mxPoint x="1325" y="534" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c24" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;edgeStyle=none;align=left;spacingLeft=4;" value="10: verificarLimiteCaes(passeador, existentes, ag)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+            <Array as="points">
+              <mxPoint x="495" y="592" />
+              <mxPoint x="495" y="614" />
+            </Array>
+            <mxPoint x="455" y="592" as="sourcePoint" />
+            <mxPoint x="455" y="614" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="11: calcularValor()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="640" as="sourcePoint" />
+            <mxPoint x="1325" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="12: «create» Pagamento(valor)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="678" as="sourcePoint" />
+            <mxPoint x="1420" y="678" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="13: setPagamento(pag)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="746" as="sourcePoint" />
+            <mxPoint x="1325" y="746" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="14: salvar(ag)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="784" as="sourcePoint" />
+            <mxPoint x="1150" y="784" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;fontSize=10;rounded=0;" value="ag">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="822" as="sourcePoint" />
+            <mxPoint x="280" y="822" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;" value="15: exibe tela de pagamento">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="860" as="sourcePoint" />
+            <mxPoint x="100" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=0;width=50;height=20;fontSize=10;fontStyle=1;fillColor=none;" value="loop" vertex="1">
+          <mxGeometry height="58" width="965" x="410" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="1" style="text;html=0;fontSize=10;align=left;verticalAlign=top;" value="[para cada existente]" vertex="1">
+          <mxGeometry height="18" width="160" x="465" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="1" style="shape=note;whiteSpace=wrap;html=0;size=10;fontSize=10;fillColor=#FFFFCC;strokeColor=#999999;align=left;spacingLeft=4;" value="RI-1: construtor recusa início&#xa;anterior à data de criação" vertex="1">
+          <mxGeometry height="40" width="200" x="1600" y="363" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="1" style="shape=note;whiteSpace=wrap;html=0;size=10;fontSize=10;fillColor=#FFFFCC;strokeColor=#999999;align=left;spacingLeft=4;" value="RI-5: mesmo cão em dois&#xa;agendamentos no mesmo horário" vertex="1">
+          <mxGeometry height="40" width="200" x="1600" y="509" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="1" style="shape=note;whiteSpace=wrap;html=0;size=10;fontSize=10;fillColor=#FFFFCC;strokeColor=#999999;align=left;spacingLeft=4;" value="RI-6: soma de cães não pode&#xa;passar do limiteCaes" vertex="1">
+          <mxGeometry height="40" width="200" x="1600" y="587" as="geometry" />
+        </mxCell>
+        <mxCell id="n2001" edge="1" parent="1" style="html=0;verticalAlign=bottom;endArrow=block;endFill=1;fontSize=10;rounded=0;edgeStyle=none;align=left;spacingLeft=4;" value="5: validarPasseador(passeador): exige estaValidado() e visivelNasBuscas">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+            <Array as="points">
+              <mxPoint x="495" y="282" />
+              <mxPoint x="495" y="304" />
+            </Array>
+            <mxPoint x="455" y="282" as="sourcePoint" />
+            <mxPoint x="455" y="304" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n2002" parent="1" style="shape=note;whiteSpace=wrap;html=0;size=10;fontSize=10;fillColor=#FFFFCC;strokeColor=#999999;align=left;spacingLeft=4;" value="CA03.6/CA06.4: só passeador validado&#xa;e visível nas buscas pode ser agendado" vertex="1">
+          <mxGeometry height="40" width="230" x="1600" y="262" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
