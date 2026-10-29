@@ -12,76 +12,38 @@ em que o sistema foi trabalhado na UFES:
     projeto do sistema (arquitetura, CDP, CGT, CIU), protótipo de alta fidelidade e
     fontes LaTeX do documento de projeto.
 
----
+<p align="center">
+  <img src="docs/screenshots/login.png" width="260" alt="Tela de entrada do protótipo">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/atendente.png" width="260" alt="Central de atendimento do protótipo">
+</p>
 
-## Project info
+## O protótipo
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**[Abrir o protótipo →](https://happypawss.lovable.app)**
 
-## How can I edit this code?
+É um protótipo **não funcional**: não há backend e os dados são de exemplo. Qualquer e-mail e senha
+entram como tutor, e **Entrar como Atendente** abre a central de atendimento.
 
-There are several ways of editing your application.
+Telas: entrada e cadastro, busca e perfil de passeadores, agendamento, acompanhamento do passeio,
+foto do passeio, avaliação, perfil do pet, suporte e a central de atendimento (tickets de emergência,
+denúncia, financeiro e técnico).
 
-**Use Lovable**
+## Como foi construído
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+O protótipo foi gerado com o **[Lovable](https://lovable.dev)** (*vibe coding*) a partir dos requisitos
+e das user stories de ES1 e depois ajustado pela equipe, em prompts e à mão (a tela de passeio unificada,
+o pagamento, a foto do passeio e o fluxo de emergência). É um trabalho em equipe das disciplinas de
+Engenharia de Software da UFES.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Rodar localmente
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Requer Node.js 18 ou mais recente.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm install
+npm run dev      # servidor de desenvolvimento (Vite)
+npm test         # testes (Vitest)
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Stack: Vite, React, TypeScript, Tailwind CSS e shadcn/ui.
