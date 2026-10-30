@@ -130,3 +130,46 @@ O usuário subiu os arquivos; a verificação foi feita pelo painel do navegador
   página própria e girado. Capa com o histórico de alterações.
 - Numeração final: Capítulo 5 = lógica de negócio, Capítulo 6 = interação
   humano-computador (o antigo Capítulo 5 saiu da compilação).
+
+## 2026-10-30 — correções da T3 antes da entrega
+
+Revisão do Capítulo 6 contra a especificação, os diagramas e o protótipo.
+
+### Diagramas
+- **CIU dos três subsistemas refeitos** (`ciu-*.drawio`/`.png`), mesmo estilo, com
+  rotas ortogonais. Gestão de Perfis: links Login → CadastroPasseador e
+  MeusCachorros → Convites, EnvioDocumentos → ModoTrabalho e os redirecionamentos
+  depois de cadastro, de salvar o cão, de aceitar convite e de decidir a validação.
+  Serviços: `consultarTrajeto` no `ExecucaoPasseioController` (usado no diagrama de
+  sequência), operações do `AgendamentoController` com os mesmos nomes da Apl,
+  `listarFotosMural` em `AplConquistas`, `PagamentoController` volta para
+  MeusAgendamentos, links de MeusAgendamentos para Pagamento, Execução,
+  Acompanhamento e Avaliação, `RastreadorGps` como composição da página; saiu o
+  "(Figura 15)" errado da nota. Suporte: o notificador é chamado pela
+  `AplAtendimento` (não pelo controlador) e entrou o `EventosSuporteHandler` (SSE).
+- **CGT** (`ln-*-cgt`): operações de consulta usadas pela CIU (`consultarPerfil`,
+  `listarConvites`, `consultarValidacao`, `consultarModoTrabalho`,
+  `consultarAgendamento`, `listarFotosMural`, `consultarChamado`);
+  `AplAgendamento` alargada (texto cortado) e dependência para o notificador sem
+  cruzar o `GatewayPagamento`.
+
+### Documento
+- Capítulo 5: Tabela 4 com `AplModoTrabalho`; Tabelas 6, 7 e 8 com as operações
+  que faltavam; `buscarPasseadores` com os filtros do CA07.1.
+- Capítulo 6: texto alinhado aos diagramas; notação com dependência, composição e
+  links de menu; busca pelos filtros do CA07.1; chat do propósito registrado como
+  fora do projeto; "Esqueci minha senha" ligado ao Better Auth.
+- `main.tex`: `placeins` com `\FloatBarrier` só no Capítulo 6 (as figuras do
+  protótipo caíam no meio da seção 6.4, porque o `\clearpage` estava desativado no
+  grupo dos capítulos) e o `\endgroup` que faltava. Histórico 3.0 registra a
+  atualização do CGT.
+- Protótipo: o link principal passa a ser o das telas desta revisão (raw.githack
+  sobre `prototipo/index.html`); o Lovable fica citado como versão de ES1.
+
+### Protótipo
+- Tela 05: sem "Especialidades" (não está na US06). Tela 09: "Falar com o
+  passeador" virou "Relatar um problema ao suporte" (chat não tem user story).
+  Tela 12: descrição e anexo sem chat. Telas 13 e 14: sem o item "Indicadores".
+  Tela 14: documentos iguais aos da tela 04 (RG, CNH, Selfie).
+- Folhas regeradas em PNG (2,5x) pelo navegador, por falta de conversor SVG → PDF;
+  os PDFs antigos das folhas foram removidos.

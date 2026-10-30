@@ -80,7 +80,7 @@
 <circle cx="342.8" cy="671.8" r="3.9" fill="#AEB6BF"/>
 <circle cx="349.7" cy="675.9" r="3.6" fill="#AEB6BF"/>
 <rect x="60.0" y="726.0" width="335.0" height="42.0" fill="#FFFFFF" rx="10.0" ry="10.0" stroke="#1F7A5A" stroke-width="1.4"/>
-<text x="227.5" y="752.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1F7A5A" font-weight="bold" text-anchor="middle">Falar com o passeador</text>
+<text x="227.5" y="752.0" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#1F7A5A" font-weight="bold" text-anchor="middle">Relatar um problema ao suporte</text>
 <rect x="40.0" y="790.0" width="375.0" height="62.0" fill="#FFFFFF"/>
 <line x1="40.0" y1="790.0" x2="415.0" y2="790.0" stroke="#E3E6EA" stroke-width="1.0"/>
 <path d="M 77.875 814.0 L 86.875 805.0 L 95.875 814.0 L 95.875 822.0 L 77.875 822.0 Z" fill="none" stroke="#9AA0A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>

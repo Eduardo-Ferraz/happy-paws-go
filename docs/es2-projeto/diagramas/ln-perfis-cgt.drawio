@@ -8,7 +8,7 @@
           <mxGeometry height="24" width="600" x="40" y="20" as="geometry" />
         </mxCell>
         <mxCell id="c4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=0;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="AplCadastroUsuario" vertex="1">
-          <mxGeometry height="114" width="450" x="40" y="338" as="geometry" />
+          <mxGeometry height="134.0" width="450" x="40" y="358.0" as="geometry" />
         </mxCell>
         <mxCell id="c5" parent="c4" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82B366;" value="" vertex="1">
           <mxGeometry height="8" width="450" y="26" as="geometry" />
@@ -19,14 +19,14 @@
         <mxCell id="c7" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ cadastrarPasseador(dados: DadosPasseador): Passeador" vertex="1">
           <mxGeometry height="20" width="450" y="54" as="geometry" />
         </mxCell>
-        <mxCell id="c8" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ atualizarPerfil(usuarioId: string, dados: DadosPerfil): Usuario" vertex="1">
-          <mxGeometry height="20" width="450" y="74" as="geometry" />
+        <mxCell id="add1_c4" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ consultarPerfil(usuarioId: string): Usuario" vertex="1"><mxGeometry y="74.0" width="450" height="20" as="geometry" /></mxCell><mxCell id="c8" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ atualizarPerfil(usuarioId: string, dados: DadosPerfil): Usuario" vertex="1">
+          <mxGeometry height="20" width="450" y="94.0" as="geometry" />
         </mxCell>
         <mxCell id="c9" parent="c4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ autenticar(email: string, senha: string): Usuario" vertex="1">
-          <mxGeometry height="20" width="450" y="94" as="geometry" />
+          <mxGeometry height="20" width="450" y="114.0" as="geometry" />
         </mxCell>
         <mxCell id="c10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=0;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="AplCadastroCachorro" vertex="1">
-          <mxGeometry height="114" width="490" x="40" y="194" as="geometry" />
+          <mxGeometry height="114" width="490" x="40" y="214.0" as="geometry" />
         </mxCell>
         <mxCell id="c11" parent="c10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82B366;" value="" vertex="1">
           <mxGeometry height="8" width="490" y="26" as="geometry" />
@@ -44,7 +44,7 @@
           <mxGeometry height="20" width="490" y="94" as="geometry" />
         </mxCell>
         <mxCell id="c16" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=0;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="AplCompartilhamentoPerfil" vertex="1">
-          <mxGeometry height="94" width="580" x="40" y="70" as="geometry" />
+          <mxGeometry height="114.0" width="580" x="40" y="70" as="geometry" />
         </mxCell>
         <mxCell id="c17" parent="c16" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82B366;" value="" vertex="1">
           <mxGeometry height="8" width="580" y="26" as="geometry" />
@@ -52,14 +52,14 @@
         <mxCell id="c18" parent="c16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ convidarTutor(cachorroId: string, emailConvidado: string): ConviteCompartilhamento" vertex="1">
           <mxGeometry height="20" width="580" y="34" as="geometry" />
         </mxCell>
-        <mxCell id="c19" parent="c16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ aceitarConvite(conviteId: string): void" vertex="1">
-          <mxGeometry height="20" width="580" y="54" as="geometry" />
+        <mxCell id="add0_c16" parent="c16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ listarConvites(tutorId: string): ConviteCompartilhamento[]" vertex="1"><mxGeometry y="54.0" width="580" height="20" as="geometry" /></mxCell><mxCell id="c19" parent="c16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ aceitarConvite(conviteId: string): void" vertex="1">
+          <mxGeometry height="20" width="580" y="74.0" as="geometry" />
         </mxCell>
         <mxCell id="c20" parent="c16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ recusarConvite(conviteId: string): void" vertex="1">
-          <mxGeometry height="20" width="580" y="74" as="geometry" />
+          <mxGeometry height="20" width="580" y="94.0" as="geometry" />
         </mxCell>
         <mxCell id="c21" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=0;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="AplValidacaoPasseador" vertex="1">
-          <mxGeometry height="114" width="470" x="40" y="482" as="geometry" />
+          <mxGeometry height="134.0" width="470" x="40" y="522.0" as="geometry" />
         </mxCell>
         <mxCell id="c22" parent="c21" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82B366;" value="" vertex="1">
           <mxGeometry height="8" width="470" y="26" as="geometry" />
@@ -67,14 +67,14 @@
         <mxCell id="c23" parent="c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ enviarDocumentos(passeadorId: string, arquivos: File[]): Validacao" vertex="1">
           <mxGeometry height="20" width="470" y="34" as="geometry" />
         </mxCell>
-        <mxCell id="c24" parent="c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ listarValidacoesPendentes(): Validacao[]" vertex="1">
-          <mxGeometry height="20" width="470" y="54" as="geometry" />
+        <mxCell id="add2_c21" parent="c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ consultarValidacao(passeadorId: string): Validacao" vertex="1"><mxGeometry y="54.0" width="470" height="20" as="geometry" /></mxCell><mxCell id="c24" parent="c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ listarValidacoesPendentes(): Validacao[]" vertex="1">
+          <mxGeometry height="20" width="470" y="74.0" as="geometry" />
         </mxCell>
         <mxCell id="c25" parent="c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ aprovarValidacao(validacaoId: string, atendenteId: string): void" vertex="1">
-          <mxGeometry height="20" width="470" y="74" as="geometry" />
+          <mxGeometry height="20" width="470" y="94.0" as="geometry" />
         </mxCell>
         <mxCell id="c26" parent="c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ reprovarValidacao(validacaoId: string, atendenteId: string, motivo: string): void" vertex="1">
-          <mxGeometry height="20" width="470" y="94" as="geometry" />
+          <mxGeometry height="20" width="470" y="114.0" as="geometry" />
         </mxCell>
         <mxCell id="c27" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;dashed=1;" value="cdp::Usuario" vertex="1">
           <mxGeometry height="30" width="120" x="820" y="278" as="geometry" />
@@ -125,19 +125,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="n1001" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=0;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="AplModoTrabalho" vertex="1">
-          <mxGeometry height="84" width="560" x="40" y="626" as="geometry" />
-        </mxCell>
-        <mxCell id="n1002" parent="n1001" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="" vertex="1">
-          <mxGeometry height="10" width="560" y="34" as="geometry" />
+          <mxGeometry height="94.0" width="560" x="40" y="686.0" as="geometry" />
         </mxCell>
         <mxCell id="n1003" parent="n1001" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82B366;" value="" vertex="1">
           <mxGeometry height="8" width="560" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="n1004" parent="n1001" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ configurarModoTrabalho(passeadorId: string, dados: DadosModoTrabalho): Passeador" vertex="1">
-          <mxGeometry height="20" width="560" y="44" as="geometry" />
+        <mxCell id="add3_n1001" parent="n1001" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ consultarModoTrabalho(passeadorId: string): Passeador" vertex="1"><mxGeometry y="34.0" width="560" height="20" as="geometry" /></mxCell><mxCell id="n1004" parent="n1001" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ configurarModoTrabalho(passeadorId: string, dados: DadosModoTrabalho): Passeador" vertex="1">
+          <mxGeometry height="20" width="560" y="54.0" as="geometry" />
         </mxCell>
         <mxCell id="n1005" parent="n1001" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ alterarDisponibilidade(passeadorId: string, visivelNasBuscas: boolean): void" vertex="1">
-          <mxGeometry height="20" width="560" y="64" as="geometry" />
+          <mxGeometry height="20" width="560" y="74.0" as="geometry" />
         </mxCell>
         <mxCell id="n1006" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;dashed=1;" value="cdp::Atendente" vertex="1">
           <mxGeometry height="30" width="136" x="834" y="430" as="geometry" />

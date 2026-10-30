@@ -23,7 +23,7 @@
           <mxGeometry height="20" width="560" y="74" as="geometry" />
         </mxCell>
         <mxCell id="c9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=0;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" value="AplAtendimento" vertex="1">
-          <mxGeometry height="114" width="480" x="40" y="204" as="geometry" />
+          <mxGeometry height="134.0" width="480" x="40" y="204" as="geometry" />
         </mxCell>
         <mxCell id="c10" parent="c9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82B366;" value="" vertex="1">
           <mxGeometry height="8" width="480" y="26" as="geometry" />
@@ -31,14 +31,14 @@
         <mxCell id="c11" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ listarFilaAtendimento(): Chamado[]" vertex="1">
           <mxGeometry height="20" width="480" y="34" as="geometry" />
         </mxCell>
-        <mxCell id="c12" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ responderChamado(chamadoId: string, texto: string): RespostaChamado" vertex="1">
-          <mxGeometry height="20" width="480" y="54" as="geometry" />
+        <mxCell id="add0_c9" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ consultarChamado(chamadoId: string): Chamado" vertex="1"><mxGeometry y="54.0" width="480" height="20" as="geometry" /></mxCell><mxCell id="c12" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ responderChamado(chamadoId: string, texto: string): RespostaChamado" vertex="1">
+          <mxGeometry height="20" width="480" y="74.0" as="geometry" />
         </mxCell>
         <mxCell id="c13" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ encerrarChamado(chamadoId: string): void" vertex="1">
-          <mxGeometry height="20" width="480" y="74" as="geometry" />
+          <mxGeometry height="20" width="480" y="94.0" as="geometry" />
         </mxCell>
         <mxCell id="c14" parent="c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=0;fontSize=11;" value="+ calcularIndicadorAtendimento(inicio: Date, fim: Date): number" vertex="1">
-          <mxGeometry height="20" width="480" y="94" as="geometry" />
+          <mxGeometry height="20" width="480" y="114.0" as="geometry" />
         </mxCell>
         <mxCell id="c15" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;dashed=1;" value="comum::NotificadorTempoReal" vertex="1">
           <mxGeometry height="30" width="240" x="760" y="134" as="geometry" />

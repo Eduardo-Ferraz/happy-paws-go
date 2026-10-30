@@ -57,6 +57,10 @@
 % Inclusão de gráficos.
 \usepackage{graphicx}
 
+% \FloatBarrier: impede que figuras flutuem para depois do início da seção seguinte
+% (usado nas seções do capítulo de interação humano-computador).
+\usepackage{placeins}
+
 % Tabularx package: melhor controle de leiaute de tabelas.
 \usepackage{tabularx}
 
@@ -290,7 +294,7 @@
 		\textbf{Versão} & \textbf{Data} & \textbf{Alterações} \\ \hline
 		1.0 & 14/09/2026 & T1: descrição geral do sistema, plataforma de desenvolvimento, requisitos não funcionais condutores da arquitetura e arquitetura de software (Capítulos 1 a 4). \\ \hline
 		2.0 & 09/10/2026 & T2: projeto da lógica de negócio --- componentes de domínio do problema (CDP) e de gerência de tarefas (CGT) dos três subsistemas. \\ \hline
-		3.0 & 26/10/2026 & T3: projeto da interação humano-computador --- organização da Camada de Apresentação, perfis de usuário e táticas de usabilidade, protótipo de alta fidelidade e projeto da Camada de Interface com o Usuário dos três subsistemas. \\ \hline
+		3.0 & 26/10/2026 & T3: projeto da interação humano-computador --- organização da Camada de Apresentação, perfis de usuário e táticas de usabilidade, protótipo de alta fidelidade e projeto da Camada de Interface com o Usuário dos três subsistemas. Atualização do CGT (Capítulo 5) com as operações usadas pela Camada de Interface com o Usuário. \\ \hline
 	\end{tabular}
 
 	\vspace{1cm}
@@ -304,6 +308,11 @@
 \textual
 
 % Inclusão dos capítulos.
+% Os capítulos seguem na mesma página (\clearpage desativado), mas o \FloatBarrier
+% do pacote placeins continua usando o \clearpage original para descarregar as figuras.
+\let\clearpageoriginal\clearpage
+\let\FloatBarrieroriginal\FloatBarrier
+\renewcommand{\FloatBarrier}{\begingroup\let\clearpage\clearpageoriginal\FloatBarrieroriginal\endgroup}
 \begingroup
 \let\clearpage\relax
 \input{capitulos/ch1-introducao}
@@ -322,6 +331,7 @@
 \input{capitulos/ch6-business-logic}
 \vspace*{1.3cm}
 \input{capitulos/ch7-human-computer-interaction}
+\endgroup
 
 
 

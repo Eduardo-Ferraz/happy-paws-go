@@ -14,7 +14,7 @@ dos diagramas editáveis e do protótipo.
 |---|---|
 | [`documento-de-projeto/`](documento-de-projeto/) | Fontes LaTeX completas: `main.tex`, `capitulos/` e `figuras/`. |
 | [`diagramas/`](diagramas/) | Diagramas editáveis em [diagrams.net](https://app.diagrams.net): `ln-*.drawio` (lógica de negócio, T2) e `ciu-*.drawio` (interface com o usuário e sequência, T3). |
-| [`prototipo/`](prototipo/) | Protótipo de alta fidelidade do T3: 14 telas em SVG (uma por página do pacote `cih`), as folhas em PDF usadas no documento e um `index.html` que mostra todas offline. |
+| [`prototipo/`](prototipo/) | Protótipo de alta fidelidade do T3: 14 telas em SVG (uma por página do pacote `cih`), as folhas em PNG usadas no documento e um `index.html` que mostra todas offline. |
 | [`exercicio-05/`](exercicio-05/) | Exercício 05 (Projeto da Interface com o Usuário), entregue à parte: PDF e os 6 diagramas em `.drawio`/`.png`. |
 | [`.project/`](.project/) | Notas de trabalho: contexto atual, decisões de projeto com a justificativa e histórico de alterações. |
 
@@ -51,8 +51,9 @@ e as rotas das tabelas do Capítulo 6, acrescentam as telas do perfil Atendente 
 chamados e análise de validação) e aplicam as táticas de usabilidade registradas no
 documento.
 
-Para ver todas as telas: abra [`prototipo/index.html`](prototipo/index.html) no
-navegador (funciona offline, sem servidor).
+Para ver todas as telas na Web (é o endereço citado no documento):
+<https://raw.githack.com/Eduardo-Ferraz/happy-paws-go/main/docs/es2-projeto/prototipo/index.html>.
+Offline, basta abrir [`prototipo/index.html`](prototipo/index.html) no navegador.
 
 ## Como compilar o documento
 

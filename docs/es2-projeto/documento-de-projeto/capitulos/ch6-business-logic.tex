@@ -29,7 +29,7 @@ A Tabela~\ref{tabela-componentes-negocio} resume os componentes da camada de Neg
 	\textbf{Subsistema} & \textbf{CDP} & \textbf{CGT} \\\hline
 	\endhead
 
-	Gestão de Perfis & \texttt{Usuario}, \texttt{Tutor}, \texttt{Passeador}, \texttt{Atendente}, \texttt{Endereco}, \texttt{Cachorro}, \texttt{ConviteCompartilhamento}, \texttt{Validacao}, \texttt{Documento} & \texttt{AplCadastroUsuario}, \texttt{AplCadastroCachorro}, \texttt{AplCompartilhamentoPerfil}, \texttt{AplValidacaoPasseador} \\\hline
+	Gestão de Perfis & \texttt{Usuario}, \texttt{Tutor}, \texttt{Passeador}, \texttt{Atendente}, \texttt{Endereco}, \texttt{Cachorro}, \texttt{ConviteCompartilhamento}, \texttt{Validacao}, \texttt{Documento} & \texttt{AplCadastroUsuario}, \texttt{AplCadastroCachorro}, \texttt{AplCompartilhamentoPerfil}, \texttt{AplValidacaoPasseador}, \texttt{AplModoTrabalho} \\\hline
 
 	Serviços & \texttt{Agendamento}, \texttt{Passeio}, \texttt{RegistroPasseio}, \texttt{Foto}, \texttt{Pagamento}, \texttt{Avaliacao}, \texttt{Conquista}, \texttt{ConquistaObtida} & \texttt{AplBuscaPasseadores}, \texttt{AplAgendamento}, \texttt{AplPagamento}, \texttt{AplExecucaoPasseio}, \texttt{AplAvaliacao}, \texttt{AplConquistas} \\\hline
 
@@ -179,6 +179,7 @@ A Figura~\ref{figura-ln-perfis-cgt} mostra as classes do CGT do subsistema e a T
 
 	\texttt{AplCadastroUsuario} & \texttt{cadastrarTutor(dados)}: cadastra um tutor e seu endereço. \newline
 	\texttt{cadastrarPasseador(dados)}: cadastra um passeador, com limite de cães e especialidades. \newline
+	\texttt{consultarPerfil(usuarioId)}: retorna os dados do perfil, para edição. \newline
 	\texttt{atualizarPerfil(usuarioId, dados)}: altera os dados do perfil. \newline
 	\texttt{autenticar(email, senha)}: faz o \textit{login} do usuário. & RI-1, RI-2 \\\hline
 
@@ -188,13 +189,19 @@ A Figura~\ref{figura-ln-perfis-cgt} mostra as classes do CGT do subsistema e a T
 	\texttt{listarCachorros(tutorId)}: lista os cães do tutor. & RI-3 \\\hline
 
 	\texttt{AplCompartilhamentoPerfil} & \texttt{convidarTutor(cachorroId, emailConvidado)}: cria um convite de compartilhamento. \newline
+	\texttt{listarConvites(tutorId)}: lista os convites pendentes recebidos pelo tutor. \newline
 	\texttt{aceitarConvite(conviteId)}: o convidado passa a ser tutor do cão. \newline
 	\texttt{recusarConvite(conviteId)}: encerra o convite. & US05 \\\hline
 
 	\texttt{AplValidacaoPasseador} & \texttt{enviarDocumentos(passeadorId, arquivos)}: envia os documentos e abre uma validação. \newline
+	\texttt{consultarValidacao(passeadorId)}: retorna a validação mais recente do passeador e seu estado. \newline
 	\texttt{listarValidacoesPendentes()}: lista as validações para o Atendente. \newline
 	\texttt{aprovarValidacao(validacaoId)}: aprova a validação. \newline
 	\texttt{reprovarValidacao(validacaoId, motivo)}: reprova a validação, informando o motivo. & RI-4, RI-5 \\\hline
+
+	\texttt{AplModoTrabalho} & \texttt{consultarModoTrabalho(passeadorId)}: retorna o preço por hora, o limite de cães, os portes aceitos e a visibilidade do passeador. \newline
+	\texttt{configurarModoTrabalho(passeadorId, dados)}: altera o preço por hora, o limite de cães e os portes aceitos, recusando valores inválidos. \newline
+	\texttt{alterarDisponibilidade(passeadorId, visivelNasBuscas)}: mostra ou esconde o passeador nas buscas. & CA06.2, CA06.4 \\\hline
 \end{longtable}
 \end{footnotesize}
 
@@ -270,11 +277,15 @@ A Figura~\ref{figura-ln-servicos-cgt} mostra as classes do CGT do subsistema e a
 	\textbf{Classe} & \textbf{Operações} & \textbf{Regras} \\\hline
 	\endhead
 
-	\texttt{AplBuscaPasseadores} & \texttt{buscarPasseadores(filtro)}: retorna os passeadores validados que atendem a localização, a especialidade e o horário informados, ordenados por distância. & --- \\\hline
+	\texttt{AplBuscaPasseadores} & \texttt{buscarPasseadores(filtro)}: retorna os passeadores validados que atendem a todos os filtros (bairro, faixa de preço e porte do cão) e estão disponíveis no horário informado, ordenados por distância. & CA07.1, CA07.2 \\\hline
 
 	\texttt{AplAgendamento} & \texttt{agendarPasseio(dados)}: cria um agendamento avulso ou fixo, com pagamento pendente. \newline
 	\texttt{cancelarAgendamento(agendamentoId)}: cancela o agendamento e os passeios futuros. \newline
-	\texttt{listarAgendamentos(usuarioId)}: lista os agendamentos do tutor ou do passeador. & RI-1, RI-5, RI-6 \\\hline
+	\texttt{listarAgendamentos(usuarioId)}: lista os agendamentos do tutor ou do passeador. \newline
+	\texttt{consultarAgendamento(agendamentoId)}: retorna o agendamento, com cães, horário e valor, para o resumo do pagamento. \newline
+	\texttt{aceitarAgendamento(agendamentoId, passeadorId)} e \texttt{recusarAgendamento(agendamentoId, passeadorId)}: resposta do passeador à solicitação; a recusa estorna o pagamento. \newline
+	\texttt{alterarRecorrencia(agendamentoId, dados)}: altera os dias e a data final de um agendamento fixo. \newline
+	\texttt{listarSolicitacoesPendentes(passeadorId)}: lista as solicitações que aguardam resposta do passeador. & RI-1, RI-5, RI-6, CA08.4, CA09.4, CA09.5 \\\hline
 
 	\texttt{AplPagamento} & \texttt{pagarAgendamento(agendamentoId, dadosPagamento)}: envia o pagamento ao provedor externo; se aprovado, confirma o agendamento e gera os passeios. & RI-4 \\\hline
 
@@ -288,7 +299,8 @@ A Figura~\ref{figura-ln-servicos-cgt} mostra as classes do CGT do subsistema e a
 	\texttt{AplAvaliacao} & \texttt{avaliarPasseio(passeioId, nota, comentario)}: registra a avaliação de um passeio concluído. & --- \\\hline
 
 	\texttt{AplConquistas} & \texttt{verificarConquistas(cachorroId)}: confere o histórico do cão e cria as novas conquistas obtidas. \newline
-	\texttt{listarConquistas(cachorroId)}: lista as conquistas do cão. & US13 \\\hline
+	\texttt{listarConquistas(cachorroId)}: lista as conquistas do cão. \newline
+	\texttt{listarFotosMural(cachorroId)}: lista as fotos dos passeios do cão, para o mural. & US13 \\\hline
 \end{longtable}
 \end{footnotesize}
 
@@ -377,7 +389,8 @@ A Figura~\ref{figura-ln-suporte-cgt} mostra as classes do CGT do subsistema e a 
 	\texttt{listarMeusChamados()}: lista os chamados do usuário. & US16 \\\hline
 
 	\texttt{AplAtendimento} & \texttt{listarFilaAtendimento()}: lista os chamados abertos, com os de ``Emergência'' no topo e os demais por ordem de abertura. \newline
-	\texttt{responderChamado(chamadoId, texto)}: registra a resposta do atendente. \newline
+	\texttt{consultarChamado(chamadoId)}: mostra o chamado, seus anexos e as respostas anteriores. \newline
+	\texttt{responderChamado(chamadoId, texto)}: registra a resposta do atendente, muda o status para ``Em atendimento'' e avisa o usuário pelo \texttt{NotificadorTempoReal}. \newline
 	\texttt{encerrarChamado(chamadoId)}: encerra o chamado. \newline
 	\texttt{calcularIndicadorAtendimento(inicio, fim)}: calcula o percentual de chamados respondidos em até 30 minutos no período. & US17, CA17.2 \\\hline
 \end{longtable}
