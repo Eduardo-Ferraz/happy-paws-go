@@ -163,8 +163,10 @@ Revisão do Capítulo 6 contra a especificação, os diagramas e o protótipo.
   protótipo caíam no meio da seção 6.4, porque o `\clearpage` estava desativado no
   grupo dos capítulos) e o `\endgroup` que faltava. Histórico 3.0 registra a
   atualização do CGT.
-- Protótipo: o link principal passa a ser o das telas desta revisão (raw.githack
-  sobre `prototipo/index.html`); o Lovable fica citado como versão de ES1.
+- Protótipo: o link principal passa a ser o das telas desta revisão (GitHub Pages
+  do repositório, `main`/`docs`:
+  <https://eduardo-ferraz.github.io/happy-paws-go/es2-projeto/prototipo/>; o
+  raw.githack mostrava uma página de aviso antes de abrir); o Lovable fica citado como versão de ES1.
 
 ### Protótipo
 - Tela 05: sem "Especialidades" (não está na US06). Tela 09: "Falar com o

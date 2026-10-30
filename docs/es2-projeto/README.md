@@ -52,7 +52,7 @@ chamados e análise de validação) e aplicam as táticas de usabilidade registr
 documento.
 
 Para ver todas as telas na Web (é o endereço citado no documento):
-<https://raw.githack.com/Eduardo-Ferraz/happy-paws-go/main/docs/es2-projeto/prototipo/index.html>.
+<https://eduardo-ferraz.github.io/happy-paws-go/es2-projeto/prototipo/>.
 Offline, basta abrir [`prototipo/index.html`](prototipo/index.html) no navegador.
 
 ## Como compilar o documento
