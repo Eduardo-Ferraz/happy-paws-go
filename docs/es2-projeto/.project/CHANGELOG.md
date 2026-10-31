@@ -175,3 +175,19 @@ Revisão do Capítulo 6 contra a especificação, os diagramas e o protótipo.
   Tela 14: documentos iguais aos da tela 04 (RG, CNH, Selfie).
 - Folhas regeradas em PNG (2,5x) pelo navegador, por falta de conversor SVG → PDF;
   os PDFs antigos das folhas foram removidos.
+
+## 2026-10-30 (noite) — diagramas CIU com ícones, refeitos pela equipe
+
+- `figuras/ciu-perfis.png`, `ciu-servicos.png` e `ciu-suporte.png` trocados pelos
+  diagramas que a equipe redesenhou com os ícones de *boundary* e *control* e com as
+  operações das classes `Apl` (como no exemplo Marvin). Mesmo conteúdo da versão em
+  draw.io, menos as setas de redirecionamento longas.
+- Essas setas foram acrescentadas por cima da imagem, contornando pela margem:
+  Perfis — `CadastroUsuarioController` → `MeusCachorrosPage`, `ModoTrabalhoPage`,
+  `ValidacoesPendentesPage` (depois do login) e `EnvioDocumentosPage` (depois do
+  cadastro do Passeador); Serviços — `PagamentoController` e `AvaliacaoController` →
+  `MeusAgendamentosPage`. Quem tiver o arquivo-fonte dos diagramas deve acrescentá-las
+  lá também. Os `diagramas/ciu-*.drawio` ficam como a versão anterior.
+- Seção 6.1: a notação passa a citar os ícones e as operações nas classes `Apl`.
+- O PDF entregue no Classroom em 30/10 usa a versão anterior (draw.io), que já
+  desenhava todas essas setas.
