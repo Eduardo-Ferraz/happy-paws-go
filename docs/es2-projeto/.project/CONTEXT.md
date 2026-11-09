@@ -1,6 +1,36 @@
-# CONTEXT — ES2 2026/2 (UFES) · entregas de 21/10/2026
+# CONTEXT — ES2 2026/2 (UFES) · atualizado em 09/11/2026
 
-## Onde estamos
+## Onde estamos (09/11/2026)
+
+Duas frentes abertas:
+
+1. **Exercício 06 — Projeto da Gerência de Dados.** Resolvido e pronto para enviar
+   em `exercicio-06/` (PDF de 11 páginas + 5 diagramas). Enunciado da clínica
+   odontológica; é ensaio do que o T4 pedirá sobre o Happy Paws.
+2. **Seminário — Teste de aspectos e teste apoiado por aspectos** (cap. 7 de
+   *Introdução ao Teste de Software*). Deck de 34 slides pronto em `seminario/`,
+   com roteiro de fala e divisão por integrante. **Apresentação em 10/12/2026**,
+   25 a 35 minutos, todos apresentam e o professor pergunta individualmente.
+
+O T3 foi prorrogado pelo professor para 30/10/2026 e **entregue nesse dia**: o
+Mateus subiu em 30/10 seis commits com os ajustes finais do Capítulo 6, os
+diagramas CIU redesenhados pela equipe (com ícones de *boundary*/*control* e as
+operações das classes `Apl`), as folhas do protótipo em PNG e o link do protótipo
+apontando para o GitHub Pages. A versão 3.0 do documento está datada de
+30/10/2026. O T4 ainda não foi iniciado.
+
+## O que falta decidir ou fazer
+
+- Confirmar com o time a divisão de quem apresenta cada bloco do seminário
+  (a do roteiro é sugestão) e substituir o esqueleto do Google Slides
+  ("Seminario EngSoft2") pelo deck novo.
+- Enviar o exercício 06 no AVA.
+- Começar o T4 aproveitando o que o exercício 06 ensaiou: hierarquia de DAOs,
+  mapeamento objeto-relacional e diagrama relacional, agora sobre o Happy Paws.
+
+---
+
+## Histórico — 21/10/2026
 
 Disciplina Engenharia de Software II (INF 16160), Prof. Vítor E. Silva Souza.
 Projeto do time: **Happy Paws** (plataforma de passeio com cães).

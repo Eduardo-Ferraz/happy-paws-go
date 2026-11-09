@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1620" height="1020" viewBox="0 0 1620 1020">
+<rect x="0" y="0" width="1620" height="1020" fill="#FFFFFF"/>
+<text x="20.0" y="26.0" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000" font-weight="bold">clinica :: ciu + cgt — tratamentos (Dentista)</text>
+<polyline points="400.0,120.0 470.0,197.9" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="400.0,240.0 470.0,242.7" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="400.0,360.0 470.0,292.0" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="400.0,480.0 470.0,341.3" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="400.0,591.0 470.0,386.1" fill="none" stroke="#000000" stroke-width="1"/>
+<polyline points="990.0,206.9 1080.0,120.0" fill="none" stroke="#000000" stroke-width="1"/>
+<line x1="1080.0" y1="120.0" x2="1076.4" y2="129.3" stroke="#000000" stroke-width="1" fill="none"/><line x1="1080.0" y1="120.0" x2="1070.5" y2="123.3" stroke="#000000" stroke-width="1" fill="none"/>
+<text x="1062.0" y="114.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">1</text>
+<polyline points="990.0,280.8 1080.0,308.0" fill="none" stroke="#000000" stroke-width="1"/>
+<line x1="1080.0" y1="308.0" x2="1070.1" y2="309.4" stroke="#000000" stroke-width="1" fill="none"/><line x1="1080.0" y1="308.0" x2="1072.5" y2="301.3" stroke="#000000" stroke-width="1" fill="none"/>
+<text x="1062.0" y="302.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">1</text>
+<polyline points="990.0,370.4 1080.0,547.0" fill="none" stroke="#000000" stroke-width="1"/>
+<line x1="1080.0" y1="547.0" x2="1072.1" y2="540.8" stroke="#000000" stroke-width="1" fill="none"/><line x1="1080.0" y1="547.0" x2="1079.7" y2="537.0" stroke="#000000" stroke-width="1" fill="none"/>
+<text x="1062.0" y="541.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">1</text>
+<polyline points="220.0,280.0 220.0,320.0" fill="none" stroke="#000000" stroke-width="1"/>
+<line x1="220.0" y1="320.0" x2="215.8" y2="310.9" stroke="#000000" stroke-width="1" fill="none"/><line x1="220.0" y1="320.0" x2="224.2" y2="310.9" stroke="#000000" stroke-width="1" fill="none"/>
+<polyline points="220.0,400.0 220.0,440.0" fill="none" stroke="#000000" stroke-width="1"/>
+<line x1="220.0" y1="440.0" x2="215.8" y2="430.9" stroke="#000000" stroke-width="1" fill="none"/><line x1="220.0" y1="440.0" x2="224.2" y2="430.9" stroke="#000000" stroke-width="1" fill="none"/>
+<rect x="40.0" y="80.0" width="360.0" height="80.0" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1"/>
+<text x="220.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">JanAvaliacao</text>
+<line x1="40.0" y1="106.0" x2="400.0" y2="106.0" stroke="#6C8EBF" stroke-width="1"/>
+<line x1="40.0" y1="118.0" x2="400.0" y2="118.0" stroke="#6C8EBF" stroke-width="1"/>
+<text x="48.0" y="137.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ obterPaciente(): Paciente</text>
+<text x="48.0" y="155.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ obterServicosEDentes(): Apontamento [1..*]</text>
+<rect x="40.0" y="200.0" width="360.0" height="80.0" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1"/>
+<text x="220.0" y="217.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">JanConsultaTratamento</text>
+<line x1="40.0" y1="226.0" x2="400.0" y2="226.0" stroke="#6C8EBF" stroke-width="1"/>
+<line x1="40.0" y1="238.0" x2="400.0" y2="238.0" stroke="#6C8EBF" stroke-width="1"/>
+<text x="48.0" y="257.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ exibirLista(ts: Tratamento [0..*]): void</text>
+<text x="48.0" y="275.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ obterFiltro(): Filtro</text>
+<rect x="40.0" y="320.0" width="360.0" height="80.0" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1"/>
+<text x="220.0" y="337.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">JanTratamento</text>
+<line x1="40.0" y1="346.0" x2="400.0" y2="346.0" stroke="#6C8EBF" stroke-width="1"/>
+<line x1="40.0" y1="358.0" x2="400.0" y2="358.0" stroke="#6C8EBF" stroke-width="1"/>
+<text x="48.0" y="377.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ exibirTratamento(t: Tratamento): void</text>
+<text x="48.0" y="395.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ obterItemSelecionado(): ItemTratamento</text>
+<rect x="40.0" y="440.0" width="360.0" height="80.0" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1"/>
+<text x="220.0" y="457.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">JanItemTratamento</text>
+<line x1="40.0" y1="466.0" x2="400.0" y2="466.0" stroke="#6C8EBF" stroke-width="1"/>
+<line x1="40.0" y1="478.0" x2="400.0" y2="478.0" stroke="#6C8EBF" stroke-width="1"/>
+<text x="48.0" y="497.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ exibirItem(i: ItemTratamento): void</text>
+<text x="48.0" y="515.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ obterDados(): DadosItem</text>
+<rect x="40.0" y="560.0" width="360.0" height="62.0" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1"/>
+<text x="220.0" y="577.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">JanMeusItens</text>
+<line x1="40.0" y1="586.0" x2="400.0" y2="586.0" stroke="#6C8EBF" stroke-width="1"/>
+<line x1="40.0" y1="598.0" x2="400.0" y2="598.0" stroke="#6C8EBF" stroke-width="1"/>
+<text x="48.0" y="617.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ exibirLista(is: ItemTratamento [0..*]): void</text>
+<rect x="470.0" y="180.0" width="520.0" height="224.0" fill="#FFE6CC" stroke="#D79B00" stroke-width="1"/>
+<text x="730.0" y="197.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">CtrlTratamento</text>
+<line x1="470.0" y1="206.0" x2="990.0" y2="206.0" stroke="#D79B00" stroke-width="1"/>
+<line x1="470.0" y1="218.0" x2="990.0" y2="218.0" stroke="#D79B00" stroke-width="1"/>
+<text x="478.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ avaliarPaciente(p: Paciente, aps: Apontamento [1..*]): void</text>
+<text x="478.0" y="255.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ consultarTratamento(f: Filtro): void</text>
+<text x="478.0" y="273.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ exibirTratamento(id: Long): void</text>
+<text x="478.0" y="291.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ incluirItem(idTrat: Long, dados: DadosItem): void</text>
+<text x="478.0" y="309.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ excluirItem(idItem: Long): void</text>
+<text x="478.0" y="327.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ definirValor(idItem: Long, v: BigDecimal): void</text>
+<text x="478.0" y="345.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ iniciarItem(idItem: Long): void</text>
+<text x="478.0" y="363.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ alterarItem(dados: DadosItem): void</text>
+<text x="478.0" y="381.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ concluirItem(idItem: Long): void</text>
+<text x="478.0" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ listarMeusItens(): void</text>
+<rect x="1080.0" y="80.0" width="490.0" height="80.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1"/>
+<text x="1325.0" y="97.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">AplAvaliarPaciente</text>
+<line x1="1080.0" y1="106.0" x2="1570.0" y2="106.0" stroke="#82B366" stroke-width="1"/>
+<line x1="1080.0" y1="118.0" x2="1570.0" y2="118.0" stroke="#82B366" stroke-width="1"/>
+<text x="1088.0" y="137.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ avaliarPaciente(p: Paciente, d: Dentista,</text>
+<text x="1088.0" y="155.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">            aps: Apontamento [1..*]): Tratamento</text>
+<rect x="1080.0" y="250.0" width="490.0" height="116.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1"/>
+<text x="1325.0" y="267.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">AplGerenciarTratamento</text>
+<line x1="1080.0" y1="276.0" x2="1570.0" y2="276.0" stroke="#82B366" stroke-width="1"/>
+<line x1="1080.0" y1="288.0" x2="1570.0" y2="288.0" stroke="#82B366" stroke-width="1"/>
+<text x="1088.0" y="307.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ consultarTratamento(f: Filtro): Tratamento [0..*]</text>
+<text x="1088.0" y="325.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ incluirItem(t: Tratamento, d: Dentista, dados: DadosItem): void</text>
+<text x="1088.0" y="343.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ excluirItem(i: ItemTratamento, d: Dentista): void</text>
+<text x="1088.0" y="361.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ excluirTratamentosNaoIniciados(hoje: Date): int</text>
+<rect x="1080.0" y="480.0" width="490.0" height="134.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1"/>
+<text x="1325.0" y="497.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000" font-weight="bold" text-anchor="middle">AplExecutarItemTratamento</text>
+<line x1="1080.0" y1="506.0" x2="1570.0" y2="506.0" stroke="#82B366" stroke-width="1"/>
+<line x1="1080.0" y1="518.0" x2="1570.0" y2="518.0" stroke="#82B366" stroke-width="1"/>
+<text x="1088.0" y="537.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ definirValor(i: ItemTratamento, v: BigDecimal): void</text>
+<text x="1088.0" y="555.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ iniciarItem(i: ItemTratamento): void</text>
+<text x="1088.0" y="573.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ alterarItem(i: ItemTratamento, dados: DadosItem): void</text>
+<text x="1088.0" y="591.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ concluirItem(i: ItemTratamento): void</text>
+<text x="1088.0" y="609.0" font-family="Helvetica, Arial, sans-serif" font-size="11.0" fill="#000000">+ itensDoDentista(d: Dentista): ItemTratamento [0..*]</text>
+<path d="M 470.0 700.0 L 1016.0 700.0 L 1030.0 714.0 L 1030.0 802.0 L 470.0 802.0 Z" fill="#FFFFCC" stroke="#999999" stroke-width="1"/>
+<path d="M 1016.0 700.0 L 1016.0 714.0 L 1030.0 714.0" fill="none" stroke="#999999" stroke-width="1"/>
+<text x="476.0" y="716.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">Regras tratadas no cgt, porque dependem de mais de um objeto:</text>
+<text x="476.0" y="731.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">RI-2 — incluirItem() e excluirItem() verificam se o dentista autenticado</text>
+<text x="476.0" y="746.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">é o responsável pelo tratamento;</text>
+<text x="476.0" y="761.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">RI-3 — excluirItem() recusa item já iniciado;</text>
+<text x="476.0" y="776.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">RI-6 — incluirItem() verifica se o dentista indicado atua em alguma</text>
+<text x="476.0" y="791.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">especialidade habilitada para o serviço.</text>
+<path d="M 1060.0 700.0 L 1586.0 700.0 L 1600.0 714.0 L 1600.0 772.0 L 1060.0 772.0 Z" fill="#FFFFCC" stroke="#999999" stroke-width="1"/>
+<path d="M 1586.0 700.0 L 1586.0 714.0 L 1600.0 714.0" fill="none" stroke="#999999" stroke-width="1"/>
+<text x="1066.0" y="716.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">excluirTratamentosNaoIniciados() trata a RI-5 (tratamento não iniciado</text>
+<text x="1066.0" y="731.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">em 6 meses da avaliação é excluído). É a única operação que não parte de</text>
+<text x="1066.0" y="746.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">uma janela: ela é disparada por uma rotina periódica do sistema, e por</text>
+<text x="1066.0" y="761.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#000000">isso aparece ligada apenas à classe de aplicação.</text>
+</svg>

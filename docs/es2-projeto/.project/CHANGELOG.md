@@ -1,5 +1,38 @@
 # CHANGELOG — ES2 2026/2
 
+## 2026-11-09 — Exercício 06 e slides do seminário
+
+### Exercício 06 (Projeto da Gerência de Dados) — entrega pronta
+- `exercicio-06/ES2-2026-2-Exercicio06-HappyPaws.pdf` (11 páginas): premissas
+  assumidas, item (a) com o CDP + decisões de projeto + tabela de restrições de
+  integridade (RI-1 a RI-7), item (b) com CIU e CGT, item (c) com o CGD, o diagrama
+  relacional e as decisões de mapeamento objeto-relacional, e uma tabela de
+  rastreabilidade classe → DAO → tabela.
+- 5 diagramas em `.drawio`, `.svg`, `.pdf` e `.png`: `ex06-cdp`,
+  `ex06-ciu-cgt-cadastros`, `ex06-ciu-cgt-tratamentos`, `ex06-cgd` e
+  `ex06-relacional`.
+- O enunciado é o da clínica odontológica, não o Happy Paws: o exercício é
+  individual e serve de ensaio para o T4, que fará o mesmo sobre o nosso projeto.
+
+### Seminário — Teste de aspectos e teste apoiado por aspectos
+- `seminario/ES2-Seminario-Teste-de-Aspectos-HappyPaws.pdf` — 34 slides cobrindo o
+  capítulo 7 inteiro, em cinco blocos (fundamentos de POA; teste apoiado por
+  aspectos; o problema de testar programas OA; teste estrutural com AODU/CoDU e
+  JaBUTi/AJ; estados, mutação e ordenação com ASM, Proteum/AJ e Briand).
+- `seminario/ES2-Seminario-Teste-de-Aspectos-HappyPaws.pptx` — o mesmo deck,
+  editável, com as notas do apresentador em cada slide.
+- `seminario/ES2-Seminario-Roteiro-de-Fala.pdf` — 9 páginas: divisão por integrante
+  com tempo (30 min no total), o texto de fala de cada slide e as perguntas prováveis
+  por bloco, já que o professor pergunta individualmente ao fim.
+- Apresentação marcada para 10/12/2026, 25 a 35 minutos, com os cinco integrantes.
+
+### O que ficou de fora, de propósito
+- O deck não traz os grafos AODU e CoDU do livro (Figuras 7.4 a 7.7) nem as telas da
+  JaBUTi/AJ e da Proteum/AJ: são imagens do capítulo e redesenhá-las fielmente
+  custaria mais do que ajuda. Os slides descrevem a estrutura dos grafos e os
+  requisitos que saem deles (Tabela 7.1 está transcrita).
+- A divisão de quem apresenta cada bloco é sugestão nossa, não combinada com o time.
+
 ## 2026-10-21 — Exercício 05 e insumos do T3
 
 ### Exercício 05 (Questão 1) — entrega pronta

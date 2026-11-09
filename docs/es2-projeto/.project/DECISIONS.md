@@ -77,3 +77,35 @@ por um controlador") e evita um emaranhado de associações.
 **Consequências.** Links entre páginas e redirecionamentos aparecem só nos casos
 mais importantes (login e os fluxos principais), com o restante descrito nas tabelas de
 páginas — registrado na legenda de cada diagrama.
+
+## 2026-11-09 — Herança por tabela por classe no exercício 06
+
+**Decisão.** No mapeamento objeto-relacional do exercício 06, a hierarquia
+`Pessoa` → `Dentista`/`Paciente` virou três tabelas (tabela por classe), com a chave
+primária das filhas sendo também chave estrangeira para a mãe.
+
+**Alternativas.** (a) Tabela única com discriminador — simples, mas deixa colunas
+nulas e some com a semântica dos papéis; (b) tabela por classe concreta — duplica os
+atributos de `Pessoa` e impede referenciar "uma pessoa" de forma uniforme.
+
+**Razão.** A mesma pessoa pode ser dentista e paciente da clínica; só a tabela por
+classe representa isso sem duplicar dados. O custo é uma junção a mais nas consultas,
+aceitável no porte do sistema.
+
+**Consequência.** `telefone` e `endereco` referenciam `pessoa`, não as filhas.
+
+## 2026-11-09 — Slides do seminário entregues em PDF, com o .pptx junto
+
+**Decisão.** O deck do seminário é gerado por script (pptxgenjs) e entregue como PDF;
+o `.pptx` vai junto só para edição.
+
+**Alternativas.** (a) Montar à mão no Google Slides, a partir do esqueleto que o
+Bernardo criou; (b) entregar só o `.pptx`.
+
+**Razão.** O PDF projeta igual em qualquer máquina — fonte, código monoespaçado e
+cores não mudam — e o conteúdo é denso em código e termos técnicos, onde substituição
+de fonte estraga o alinhamento. Gerar por script também deixa o deck reconstruível:
+mudar a paleta ou mover um slide é mexer no gerador e rodar de novo.
+
+**Consequência.** Para editar, é preciso abrir o `.pptx` (ou pedir a regeração). As
+notas do apresentador estão no `.pptx` e, em texto, no roteiro de fala.

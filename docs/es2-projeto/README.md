@@ -16,6 +16,8 @@ dos diagramas editáveis e do protótipo.
 | [`diagramas/`](diagramas/) | Diagramas editáveis em [diagrams.net](https://app.diagrams.net): `ln-*.drawio` (lógica de negócio, T2) e `ciu-*.drawio` (interface com o usuário e sequência, T3). |
 | [`prototipo/`](prototipo/) | Protótipo de alta fidelidade do T3: 14 telas em SVG (uma por página do pacote `cih`), as folhas em PNG usadas no documento e um `index.html` que mostra todas offline. |
 | [`exercicio-05/`](exercicio-05/) | Exercício 05 (Projeto da Interface com o Usuário), entregue à parte: PDF e os 6 diagramas em `.drawio`/`.png`. |
+| [`exercicio-06/`](exercicio-06/) | Exercício 06 (Projeto da Gerência de Dados): PDF de 11 páginas e os 5 diagramas em `.drawio`/`.svg`/`.pdf`/`.png`. |
+| [`seminario/`](seminario/) | Seminário sobre testes de software — *Teste de aspectos e teste apoiado por aspectos* (cap. 7): slides em PDF e `.pptx` e o roteiro de fala. |
 | [`.project/`](.project/) | Notas de trabalho: contexto atual, decisões de projeto com a justificativa e histórico de alterações. |
 
 ## Etapas da disciplina
@@ -24,9 +26,10 @@ dos diagramas editáveis e do protótipo.
 |---|---|---|---|
 | T1 | Descrição geral, plataforma, atributos de qualidade e arquitetura | Capítulos 1 a 4 | entregue |
 | T2 | Projeto da lógica de domínio (CDP e CGT dos três subsistemas) | Capítulo 5 (`ch6-business-logic.tex`) | entregue |
-| T3 | Projeto da lógica de aplicação e da interação humano-computador (CIU) + protótipo de alta fidelidade | Capítulo 6 (`ch7-human-computer-interaction.tex` + `prototipo.tex`) | **a entregar em 26/10/2026** |
-| T4 | Projeto da gerência de dados (CGD + modelo relacional) | a escrever | não iniciado |
+| T3 | Projeto da lógica de aplicação e da interação humano-computador (CIU) + protótipo de alta fidelidade | Capítulo 6 (`ch7-human-computer-interaction.tex` + `prototipo.tex`) | entregue em 30/10/2026 (prazo prorrogado pelo professor) |
+| T4 | Projeto da gerência de dados (CGD + modelo relacional) | a escrever | não iniciado — o [exercício 06](exercicio-06/) ensaia o conteúdo |
 | T5 | Lista de exercícios de padrões de projeto (Jupyter Notebook) | repositório próprio | não iniciado |
+| Seminário | Teste de aspectos e teste apoiado por aspectos (cap. 7 de *Introdução ao Teste de Software*) | [`seminario/`](seminario/) | slides prontos; apresentação em 10/12/2026 |
 
 > Os números de capítulo acima são os do documento compilado hoje. O arquivo
 > `capitulos/ch5-componentes.tex` continua na pasta mas **não é compilado**: ele
